@@ -10,7 +10,7 @@ export default function Function() {
     return (
     <div>
         
-        <p>{count}</p>
+        <p className='text-3xl text-red-300'>{count}</p>
         <button onClick={Add}>Click</button>
 
     </div>

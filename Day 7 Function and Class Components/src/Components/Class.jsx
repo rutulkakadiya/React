@@ -14,9 +14,9 @@ export default class Class extends Component {
     render() {
         return (
             <div>
-                <h1>{this.state.count}</h1>
+                <h1 className='text-3xl font-bold text-red-900'>{this.state.count}</h1>
 
-                <button onClick={this.increment}>Increment</button>
+                <button className='text-3xl font-bold text-red-900' onClick={this.increment}>Increment</button>
             </div>
         )
     }
