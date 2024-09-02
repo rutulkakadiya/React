@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: "Hanken Grotesk", sans-serif;}
+
+.text1 {
+    font-size: 50px;
+    color: #441a11;
+    font-family: 'Hanken Grotesk';
+
+}
+
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+}

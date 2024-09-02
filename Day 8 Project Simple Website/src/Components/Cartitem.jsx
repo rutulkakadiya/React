@@ -13,7 +13,7 @@ export default function Cartitem({ currentImage, hoverImage, description, stars,
       <div className="txt mt-5 text-left">
         <p>{description}</p>
         <span className='text-[#f3b111] text-[16px]'>{stars}</span>
-        <span className='text-[12px]'> {reviews}</span>
+        <span className='text-[12px]'> {reviews}</span>        
 
         <p className='text-[#947853] mt-2 text-[16px]'>₹{price} <del className='text-black'>₹{originalprice}</del></p>
 
