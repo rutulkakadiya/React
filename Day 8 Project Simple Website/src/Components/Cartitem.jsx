@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react'
 import '../App.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 export default function Cartitem({ currentImage, hoverImage, description, stars, reviews, price, originalprice }) {
-
 
   return (
     <div className='w-[100%]'>

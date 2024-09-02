@@ -10,9 +10,9 @@ export default function Secondcom() {
         const swiper = new Swiper('.swiper-container2', {
             slidesPerView: 4,
             spaceBetween: 30,
-            // autoplay: true,
-            // loop: true,
-            // autoplayspeed: true,
+            autoplay: true,
+            loop: true,
+            autoplayspeed: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

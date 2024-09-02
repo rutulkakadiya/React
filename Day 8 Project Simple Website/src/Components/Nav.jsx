@@ -6,6 +6,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 export default function Nav() {
+  
   return (
     <div>
       <header className='h-[80px] flex justify-center'>
@@ -23,7 +24,16 @@ export default function Nav() {
               </div>
               <div class="offcanvas-body">
                 <div>
-                  
+                  <p className='text-[24px]'>Attar</p>
+                  <p className='text-[24px] mt-3'>Perfume Spray</p>
+                  <p className='text-[24px] mt-3'>Body Spray</p>
+                  <p className='text-[24px] mt-3'>Bakhoor</p>
+                  <p className='text-[24px] mt-3'>Incense Sticks</p>
+                  <p className='text-[24px] mt-3'>New Arrival</p>
+                  <p className='text-[24px] mt-3'>Diffuse Oil</p>
+                  <p className='text-[24px] mt-3'>Track Order</p>
+                  <p className='text-[24px] mt-3'>Return Your Order</p>
+                  <p className='text-[24px] mt-3'>Store Locator</p>
                 </div>
               </div>
             </div>
