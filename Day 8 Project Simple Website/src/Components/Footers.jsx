@@ -1,8 +1,7 @@
 import React from 'react'
-// import 'App.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 export default function Footers() {
     return (
         <div className='flex justify-center bg-[#282828] mt-5 text-white'>
