@@ -24,7 +24,7 @@
 
 .divs{
     background-color: white;
-    animation: animate1 3s linear infinite;
+    animation: animate1 2s linear infinite;
 }
 
 @keyframes animate1 {
@@ -35,7 +35,7 @@
 
 .divs1{
     background-color: #deb39c;
-    animation: animate2 3s linear infinite;
+    animation: animate2 2s linear infinite;
 }
 
 
