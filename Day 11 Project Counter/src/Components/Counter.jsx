@@ -5,32 +5,50 @@ export default function Counter() {
   const [count, setCount] = useState(0)
 
   const increaseNumber = () =>{
+    const audio = new Audio("./public/Audio1.mp3")
+    audio.play();
     setCount(count + 1)
   }
   const decreaseNumber = () =>{
+    const audio = new Audio("./public/Audio2.mp3")
+    audio.play();
     setCount(count - 1)
   }
   const resetNumber = () =>{
+    const audio = new Audio("./public/Audio3.mp3")
+    audio.play();
     setCount(count * 0)
   }
 
   const increaseNumber1 = () =>{
+    const audio = new Audio("./public/Audio4.mp3")
+    audio.play();
     setCount(count + 10)
   }
   const increaseNumber2 = () =>{
+    const audio = new Audio("./public/Audio5.mp3")
+    audio.play();
     setCount(count + 100)
   }
   const increaseNumber3 = () =>{
+    const audio = new Audio("./public/Audio6.mp3")
+    audio.play();
     setCount(count + 1000)
   }
 
   const decreaseNumber1 = () =>{
+    const audio = new Audio("./public/Audio7.mp3")
+    audio.play();
     setCount(count - 10)
   }
   const decreaseNumber2 = () =>{
+    const audio = new Audio("./public/Audio8.mp3")
+    audio.play();
     setCount(count - 100)
   }
   const decreaseNumber3 = () =>{
+    const audio = new Audio("./public/Audio9.mp3")
+    audio.play();
     setCount(count - 1000)
   }
   return (
