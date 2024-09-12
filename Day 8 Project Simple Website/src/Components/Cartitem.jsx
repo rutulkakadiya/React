@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect , useState } from 'react'
 import '../App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,9 +8,13 @@ export default function Cartitem({ currentImage, hoverImage, description, stars,
     AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
   }, []);
 
+  const [imageSrc, setImageSrc] = useState(currentImage);
+
+  
+
   return (
     <div className='w-[100%]' data-aos="fade-down">
-      <img id='img1' className='h-[300px]' src={currentImage} alt="" />
+      <img id='img1' className='h-[300px]' src={imageSrc} onMouseEnter={() => setImageSrc(hoverImage)} onMouseLeave={() => setImageSrc(currentImage)} alt="" />
 
       <div className="txt mt-5 text-left">
         <p>{description}</p>

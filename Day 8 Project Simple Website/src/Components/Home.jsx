@@ -1,9 +1,9 @@
 import React from 'react'
 import Nav from './Nav'
-import Firstcom from './FirstCom'
-import Secondcom from './Secondcom'
 import Footers from './Footers'
-import Thirdcom from './Thirdcom'
+import Besteseller from './Besteseller'
+import FirstSlider from './FirstSlider'
+import Trust_us from './Trust_us'
 
 
 
@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      <Firstcom />
-      <Secondcom />
-      <Thirdcom/>
+      <FirstSlider/>
+      <Besteseller/>
+      <Trust_us/>
       <Footers />
     </div>
   )

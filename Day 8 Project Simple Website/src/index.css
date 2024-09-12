@@ -5,9 +5,14 @@
 * {
     font-family: "Hanken Grotesk", sans-serif;}
 
+
 .text1 {
     font-size: 50px;
     color: #441a11;
+    font-family: 'kellissa';
+}
+
+.text2{
     font-family: 'kellissa';
 }
 
@@ -43,4 +48,53 @@
     50%{
         background-color: white;
     }
+}
+
+.category_image1{
+    /* background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url(../public/Add_to_Cart1_2.png); */
+    transition-duration: 0.5s;
+}
+
+.category_image1:hover{
+    transform: scale(1.1);
+}
+
+.image-container {
+    position: relative;
+}
+
+.category_image1 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url(../public/Add_to_Cart1_2.png);
+    transition-duration: 0.5s;
+}
+
+.category_image1:hover {
+    transform: scale(1.1);
+}
+
+.category_image2 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url(../public/Layer_1_1.png);
+    transition-duration: 0.5s;
+}
+
+.category_image2:hover {
+    transform: scale(1.1);
+}
+
+.category_image3 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url(../public/aw_800x_1.png);
+    transition-duration: 0.5s;
+}
+
+.category_image3:hover {
+    transform: scale(1.1);
+}
+
+.category_image4 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url(../public/Add_to_Cart1_1.png);
+    transition-duration: 0.5s;
+}
+
+.category_image4:hover {
+    transform: scale(1.1);
 }
