@@ -5,6 +5,7 @@ export default function FormValidation() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [category, setCategory] = useState("")
     const [allData, setAllData] = useState([])
 
 
@@ -67,9 +68,22 @@ export default function FormValidation() {
                     <input type="text" placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} /><br />
                     <p className='error'>{passwordErr}</p><br />
 
-                    <p className='passErr' style={{ color: changePassColor }}>*Use at least one Lowercase alphabet for password</p>
+                    <select name="" id="" onChange={(e) => setCategory(e.target.value)}>
+                        <option value="">Category</option>
+                        <option value="trader">Trader</option>
+                        <option value="manufacturer">Manufacturer</option>
+                    </select>
+<br /><br />
+                    {
+                        category == "trader" && <input type="text" placeholder="Enter trader details" />
+                    }
+                    {
+                        category == "manufacturer" && <input type="text" placeholder="Enter manufacturer details" />
+                    }
+
+                    <p className='passErr' style={{ color: changePassColor , marginTop: "10px" }}>*Use at least one Lowercase alphabet for password</p>
                     <p className='passErr' style={{ color: changePassColor }}>*Use at least one Uppercase alphabet for password</p>
-                    <p className='passErr' style={{ color: changePassColor }}>*Use at least one Special alphabet for password</p>
+                    <p className='passErr' style={{ color: changePassColor , marginBottom: "10px" }}>*Use at least one Special alphabet for password</p>
                     <input type="submit" className='btn' />
                 </center>
 
