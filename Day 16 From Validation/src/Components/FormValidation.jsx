@@ -6,6 +6,7 @@ export default function FormValidation() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [category, setCategory] = useState("")
+    const [categoryData, setCategoryData] = useState("")
     const [allData, setAllData] = useState([])
 
 
@@ -22,7 +23,7 @@ export default function FormValidation() {
         const upperCaseRegex = /[A-Z]/
         const lowerCaseRegex = /[a-z]/
         const specialCaseRegex = /[^A-Za-z0-9]/
-        
+
         const newpass = e.target.value
         setPassword(newpass)
 
@@ -55,13 +56,13 @@ export default function FormValidation() {
             setPasswordErr("")
         }
 
-        const Data = { name, email, password }
+        const Data = { name, email, password , categoryData }
 
         setAllData([...allData, Data])
 
     }
 
-    
+
 
     return (
         <div>
@@ -82,12 +83,12 @@ export default function FormValidation() {
                         <option value="trader">Trader</option>
                         <option value="manufacturer">Manufacturer</option>
                     </select>
-                    <br /><br />
+                    
                     {
-                        category == "trader" && <input type="text" placeholder="Enter trader details" />
+                        category == "trader" && <input className='input1' type="text" value={categoryData} onChange={(e) => setCategoryData(e.target.value)} placeholder="Enter trader details" />
                     }
                     {
-                        category == "manufacturer" && <input type="text" placeholder="Enter manufacturer details" />
+                        category == "manufacturer" && <input type="text" value={categoryData} onChange={(e) => setCategoryData(e.target.value)} className='input1' placeholder="Enter manufacturer details" />
                     }
 
                     <p className='passErr' style={{ color: upperCaseColor, marginTop: "10px" }}>*Use at least one Lowercase alphabet for password</p>
@@ -100,9 +101,11 @@ export default function FormValidation() {
                     <table>
                         <thead>
                             <tr>
-                                <th>No.</th>
+                                <th className='tableLine1'>No.</th>
+                                <th>Name</th>
                                 <th>E-mail</th>
                                 <th>Password</th>
+                                <th>Category</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -110,10 +113,12 @@ export default function FormValidation() {
                                 allData.map((event, i) => {
                                     return (
                                         <tr>
-                                            <td>{i + 1}</td>
+                                            <td className='tableLine1'>{i + 1}</td>
                                             <td>{event.name}</td>
                                             <td>{event.email}</td>
                                             <td>{event.password}</td>
+                                            <td>{event.categoryData}</td>
+
                                         </tr>
                                     )
                                 })

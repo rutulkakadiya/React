@@ -16,7 +16,7 @@ div{
 
 form{
     height: auto;
-    width: 40%;
+    width: 50%;
     border: 1px solid black;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -26,6 +26,12 @@ input{
     height: 45px;
     width: 80%;
     padding-left: 10px;
+}
+
+
+.input1{
+    width: 66%;
+    margin-left: 10px;
 }
 
 .btn{
@@ -48,4 +54,21 @@ input{
     color: red;
     text-align: left;
     margin-left: 10%;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+tr th{
+    height: 45px;
+    padding-inline: 15px;
+    border: 1px solid black;
+}
+
+tr td{
+    height: 45px;
+    padding-inline: 15px;
+    border: 1px solid black;
 }
