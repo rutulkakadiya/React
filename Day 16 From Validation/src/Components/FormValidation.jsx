@@ -13,7 +13,24 @@ export default function FormValidation() {
     const [emailErr, setEmailErr] = useState("")
     const [passwordErr, setPasswordErr] = useState("")
 
-    const [changePassColor, setChangePassColor] = useState("red")
+    const [upperCaseColor, setUpperCaseColor] = useState("red");
+    const [lowerCaseColor, setLowerCaseColor] = useState("red");
+    const [specialCaseColor, setSpecialCaseColor] = useState("red");
+
+    const handlePasswordChange = (e) => {
+
+        const upperCaseRegex = /[A-Z]/
+        const lowerCaseRegex = /[a-z]/
+        const specialCaseRegex = /[^A-Za-z0-9]/
+        
+        const newpass = e.target.value
+        setPassword(newpass)
+
+        setUpperCaseColor(upperCaseRegex.test(newpass) ? "green" : "red")
+        setLowerCaseColor(lowerCaseRegex.test(newpass) ? "green" : "red")
+        setSpecialCaseColor(specialCaseRegex.test(newpass) ? "green" : "red")
+
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,28 +48,20 @@ export default function FormValidation() {
         else {
             setEmailErr("")
         }
-        const upperCaseRegex = /[A-Z]/
-        const lowerCaseRegex = /[a-z]/
         if (!password) {
             setPasswordErr("*Password required")
-        }
-        else if (upperCaseRegex.test(password)) {
-            setChangePassColor("green")
-        }
-         else if (lowerCaseRegex.test(password)) {
-            setChangePassColor("green")
         }
         else {
             setPasswordErr("")
         }
-
-
 
         const Data = { name, email, password }
 
         setAllData([...allData, Data])
 
     }
+
+    
 
     return (
         <div>
@@ -65,7 +74,7 @@ export default function FormValidation() {
                     <p className='error'>{nameErr}</p><br />
                     <input type="text" placeholder='Enter E-mail' value={email} onChange={(e) => setEmail(e.target.value)} /> <br />
                     <p className='error'>{emailErr}</p><br />
-                    <input type="text" placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} /><br />
+                    <input type="text" placeholder='Enter Password' value={password} onChange={handlePasswordChange} /><br />
                     <p className='error'>{passwordErr}</p><br />
 
                     <select name="" id="" onChange={(e) => setCategory(e.target.value)}>
@@ -73,7 +82,7 @@ export default function FormValidation() {
                         <option value="trader">Trader</option>
                         <option value="manufacturer">Manufacturer</option>
                     </select>
-<br /><br />
+                    <br /><br />
                     {
                         category == "trader" && <input type="text" placeholder="Enter trader details" />
                     }
@@ -81,9 +90,9 @@ export default function FormValidation() {
                         category == "manufacturer" && <input type="text" placeholder="Enter manufacturer details" />
                     }
 
-                    <p className='passErr' style={{ color: changePassColor , marginTop: "10px" }}>*Use at least one Lowercase alphabet for password</p>
-                    <p className='passErr' style={{ color: changePassColor }}>*Use at least one Uppercase alphabet for password</p>
-                    <p className='passErr' style={{ color: changePassColor , marginBottom: "10px" }}>*Use at least one Special alphabet for password</p>
+                    <p className='passErr' style={{ color: upperCaseColor, marginTop: "10px" }}>*Use at least one Lowercase alphabet for password</p>
+                    <p className='passErr' style={{ color: lowerCaseColor }}>*Use at least one Uppercase alphabet for password</p>
+                    <p className='passErr' style={{ color: specialCaseColor, marginBottom: "10px" }}>*Use at least one Special alphabet for password</p>
                     <input type="submit" className='btn' />
                 </center>
 
@@ -94,7 +103,6 @@ export default function FormValidation() {
                                 <th>No.</th>
                                 <th>E-mail</th>
                                 <th>Password</th>
-                                <th>No.</th>
                             </tr>
                         </thead>
                         <tbody>
