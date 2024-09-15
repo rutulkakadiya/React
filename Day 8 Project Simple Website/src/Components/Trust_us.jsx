@@ -7,8 +7,8 @@ export default function Trust_us() {
             <br />
             <p className='text1 text-center text-3xl text-black'>Why Trust Us?</p>
 
-            <div className="trust_div w-[80%] ms-[10%] flex justify-between mt-[50px]">
-                <div className="divs flex justify-center items-center flex-wrap h-[150px] w-[15%] rounded-[15px] mb-[50px]">
+            <div className="trust_div w-[80%] ms-[10%] flex justify-between flex-wrap mt-[50px]">
+                <div className="divs flex justify-center items-center flex-wrap h-[150px] w-[95%] sm:w-[30%] md:w-[30%] lg:w-[15%] rounded-[15px] mb-[50px]">
                     <div className="div">
                         <center>
 
@@ -18,7 +18,7 @@ export default function Trust_us() {
                     </div>
                 </div>
 
-                <div className="divs1 flex justify-center items-center h-[150px] w-[15%] rounded-[15px] mb-[50px]">
+                <div className="divs1 flex justify-center items-center h-[150px] w-[95%] sm:w-[30%] md:w-[30%] lg:w-[15%] rounded-[15px] mb-[50px]">
                     <div className="div">
                         <center>
                             <img className='h-[50px]' src="./cruelty-free_4.png" alt="" />
@@ -26,7 +26,7 @@ export default function Trust_us() {
                         </center>
                     </div>
                 </div>
-                <div className="divs flex justify-center items-center h-[150px] w-[15%] rounded-[15px] mb-[50px]">
+                <div className="divs flex justify-center items-center h-[150px] w-[95%] sm:w-[30%] md:w-[30%] lg:w-[15%] rounded-[15px] mb-[50px]">
                     <div className="div">
                         <center>
 
@@ -35,7 +35,7 @@ export default function Trust_us() {
                         </center>
                     </div>
                 </div>
-                <div className="divs1 flex justify-center items-center h-[150px] w-[15%] rounded-[15px] mb-[50px]">
+                <div className="divs1 flex justify-center items-center h-[150px] w-[95%] sm:w-[30%] md:w-[30%] lg:w-[15%] rounded-[15px] mb-[50px]">
                     <div className="div">
                         <center>
 
@@ -44,7 +44,7 @@ export default function Trust_us() {
                         </center>
                     </div>
                 </div>
-                <div className="divs flex justify-center items-center h-[150px] w-[15%] rounded-[15px] mb-[50px]">
+                <div className="divs flex justify-center items-center h-[150px] w-[95%] sm:w-[30%] md:w-[30%] lg:w-[15%] rounded-[15px] mb-[50px]">
                     <div className="div">
                         <center>
 
@@ -53,7 +53,7 @@ export default function Trust_us() {
                         </center>
                     </div>
                 </div>
-                <div className="divs1 flex justify-center items-center h-[150px] w-[15%] rounded-[15px] mb-[50px]">
+                <div className="divs1 flex justify-center items-center h-[150px] w-[95%] sm:w-[30%] md:w-[30%] lg:w-[15%] rounded-[15px] mb-[50px]">
                     <div className="div">
                         <center>
 
