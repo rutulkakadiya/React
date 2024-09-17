@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div1{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../public/bg1.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input{
+  height: 45px;
+  border: 1px solid black;
+  width: 100%;
+  /* padding-left: 10px; */
+}
+
+.err1{
+  color: red;
+  text-align: left;
+}
+
+.div2{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../public/Watercolor-Backgrounds-07.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product_display{
+  width: 80%;
+  height: 100px;
+  /* background-color: white; */
+}
+
+.product_display1{
+  height: 100px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid white;
+}
