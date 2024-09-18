@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 export default function Form() {
-
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -44,8 +41,6 @@ export default function Form() {
         <div className='form_data'>
 
           {
-
-
             <table>
               <thead>
                 <tr>
@@ -57,6 +52,7 @@ export default function Form() {
               </thead>
               <tbody>
                 {
+                  
                   allEntry.map((data, i) => {
                     return (
                       <tr>
@@ -69,8 +65,6 @@ export default function Form() {
                 }
               </tbody>
             </table>
-
-
           }
         </div>
       </div>

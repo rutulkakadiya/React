@@ -5,7 +5,7 @@ export default function Event() {
     const [count, setCount] = useState(0)
     const [name, setName] = useState("")
     const [isvisible, setIsvisible] = useState(false)
-    
+
     const increase = () => {
         setCount(count + 1);
     }
@@ -35,10 +35,10 @@ export default function Event() {
                         <button>Click</button>
 
                         {
-                    isvisible ? <h1>hii</h1> : <h1>byy</h1>
-                }
+                            isvisible ? <h1>hii</h1> : <h1>byy</h1>
+                        }
 
-                <button onClick={()=> setIsvisible(!isvisible)}>Click</button>
+                        <button onClick={() => setIsvisible(!isvisible)}>Click</button>
 
                     </form>
                 </center>

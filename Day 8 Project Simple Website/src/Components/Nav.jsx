@@ -2,19 +2,17 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 export default function Nav() {
-  
+
   return (
     <div>
       <header className='h-[80px] flex justify-center'>
         <nav className='h-[100%] w-[97%] flex justify-between items-center'>
           <div className="nav1">
-            
+
             <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-            <FontAwesomeIcon icon={faBars} />
+              <FontAwesomeIcon icon={faBars} />
             </button>
 
             <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
@@ -41,10 +39,10 @@ export default function Nav() {
           <div className="nav1">
             <img src="/Logo_290x.png" className='h-[30px]' alt="" />
           </div>
-          <div className="nav1">
+          <div className="nav1 flex items-center">
             <FontAwesomeIcon className='mx-2' icon={faSearch} />
-            <FontAwesomeIcon className='mx-2' icon={faUser} />
-            <FontAwesomeIcon className='ms-2' icon={faCartShopping} />
+            <img src="/svg-image-7.png" className='mx-2' alt="" />
+            <img src="/svg-image-4.png" className='mx-2' alt="" />
           </div>
         </nav>
       </header>

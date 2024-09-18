@@ -44,7 +44,7 @@ export default function Besteseller() {
             },
         });
 
-        const swiper3 = new Swiper('.swiper-container3', {
+        const swiper3 = new Swiper('.swiper-container4', {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 30,
@@ -72,8 +72,8 @@ export default function Besteseller() {
                     spaceBetween: 30,
                 },
                 1280: {
-                    slidesPerView: 4,
-                    slidesPerGroup: 4,
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
                     spaceBetween: 30,
                 },
             },
@@ -379,7 +379,7 @@ export default function Besteseller() {
 
 
             <p className='text1 text-[35px] md:text-[50px] text-center mt-[50px]'>Combo Offer</p>
-            <div className="swiper-container3 overflow-hidden w-[97%] ms-[1.5%] relative">
+            <div className="swiper-container4 overflow-hidden w-[97%] ms-[1.5%] relative">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
                         <Cartitem

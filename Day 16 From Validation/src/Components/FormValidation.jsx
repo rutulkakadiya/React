@@ -9,7 +9,6 @@ export default function FormValidation() {
     const [categoryData, setCategoryData] = useState("")
     const [allData, setAllData] = useState([])
 
-
     const [nameErr, setNameErr] = useState("")
     const [emailErr, setEmailErr] = useState("")
     const [passwordErr, setPasswordErr] = useState("")

@@ -97,7 +97,6 @@ export default function Form() {
                 <button type='button' className='h-[45px] w-[100%] bg-blue-700 text-white rounded-[5px]'>Click to slide</button>
               </a>
             </center>
-
           </form>
         </div>
       </div>
@@ -117,7 +116,6 @@ export default function Form() {
 
             <input type="text" className='mt-5' placeholder='Enter Product`s Price' value={productPrice} onChange={(e) => setProductPrice(e.target.value)} />
             <p className='err1'>{productPriceErr}</p>
-
 
             <select name="" id="" className='mt-5' value={category} onChange={(e) => setCategory(e.target.value)}>
               <option value="">Category</option>
@@ -181,7 +179,6 @@ export default function Form() {
             {
               category == "books" && <input type="text" className='mt-3' placeholder='Enter Publisher Details' />
             }
-            <p className='err1'>{additionalInputErr}</p>
 
             <br /><br />
             <button className='btn1 h-[45px] w-[100%] bg-green-900 text-white rounded-[5px]' onClick={(e) => handleSubmit2(e)}>Submit</button>
