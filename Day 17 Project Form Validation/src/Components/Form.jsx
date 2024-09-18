@@ -50,7 +50,7 @@ export default function Form() {
 
 
   const handleSubmit2 = (e) => {
-    e.preventDefault()
+
     if (!productName || !productPrice) {
       if (!productName) {
         setProductNameErr("*Product`s Name required")
