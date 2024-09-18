@@ -20,8 +20,6 @@ export default function Form() {
 
   const [category, setCategory] = useState("");
 
-  const [productDisplay, setProductDisplay] = useState([]);
-
   const handleSubmit = () => {
     if (!sellerName) {
       setSellerNameErr("*Name required");
@@ -44,28 +42,34 @@ export default function Form() {
       setSellerNumberErr("")
     }
 
+    if (sellerName && sellerCompanyName && sellerNumber) {
+      alert("Seller submitted successfully...");
+    }
+
   }
 
 
-  const handleSubmit2 = () => {
-    if (!productName) {
-      setProductNameErr("*Product`s Name required")
-    }
-    else {
-      setProductNameErr("")
-    }
-    if (!productPrice) {
-      setProductPriceErr("*Product`s Price required")
-    }
-    else {
-      setProductPriceErr("")
+  const handleSubmit2 = (e) => {
+    e.preventDefault()
+    if (!productName || !productPrice) {
+      if (!productName) {
+        setProductNameErr("*Product`s Name required")
+      }
+      else {
+        setProductNameErr("")
+      }
+      if (!productPrice) {
+        setProductPriceErr("*Product`s Price required")
+      }
+      else {
+        setProductPriceErr("")
+      }
     }
 
+    if (productName && productPrice) {
+      alert("Form submitted successfully...");
+    }
 
-    const productData = { productName, productPrice }
-
-
-    setProductDisplay([productData])
   }
 
   return (
@@ -87,9 +91,11 @@ export default function Form() {
               <p className='err1'>{sellerNumberErr}</p>
               <br />
 
-              <button type='button' className='btn1 h-[45px] w-[80%] bg-green-900 text-white rounded-[5px]' onClick={handleSubmit}>Submit</button>
+              <button type='button' className='btn1 h-[45px] w-[100%] bg-green-900 text-white rounded-[5px]' onClick={handleSubmit}>Submit</button>
               <br /><br />
-              <a href="#div20"><button>Click to slide</button></a>
+              <a href="#div20">
+                <button type='button' className='h-[45px] w-[100%] bg-blue-700 text-white rounded-[5px]'>Click to slide</button>
+              </a>
             </center>
 
           </form>
@@ -104,7 +110,7 @@ export default function Form() {
 
             <br />
             <label htmlFor="" className='text-left'>Choose Image for product:</label>
-            <input type="file" className='mt-2'/>
+            <input type="file" className='mt-2' />
 
             <input type="text" className='mt-5' placeholder='Enter Product`s Name' value={productName} onChange={(e) => setProductName(e.target.value)} />
             <p className='err1'>{productNameErr}</p>
@@ -175,29 +181,16 @@ export default function Form() {
             {
               category == "books" && <input type="text" className='mt-3' placeholder='Enter Publisher Details' />
             }
+            <p className='err1'>{additionalInputErr}</p>
 
             <br /><br />
-            <button className='btn1 h-[45px] w-[100%] bg-green-900 text-white rounded-[5px]' onClick={handleSubmit2}>Submit</button>
+            <button className='btn1 h-[45px] w-[100%] bg-green-900 text-white rounded-[5px]' onClick={(e) => handleSubmit2(e)}>Submit</button>
 
 
           </form>
         </div>
 
 
-        <div className="product_display">
-          <div>
-            {
-              productDisplay.map((event, i) => {
-                return (
-                  <div className="product_display1">
-                    <p>{event.productName}</p>
-                    <p>{event.productPrice}</p>
-                  </div>
-                )
-              })
-            }
-          </div>
-        </div>
       </div>
 
     </div>
