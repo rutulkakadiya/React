@@ -5,6 +5,19 @@
 * {
     font-family: "Hanken Grotesk", sans-serif;}
 
+.login_page{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+.login_page_div{
+    height: auto;
+    width: 60%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50.5%), #A86212;
+}
+
+.div1{
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0) 100%), #A86212;
+}
 
 .text1 {
     color: #441a11;
@@ -104,4 +117,10 @@
     background-size: cover;
     background-position: center;
     margin-top: 100px;
+}
+
+.footer1{
+    background-image: url(../public/Layer_24.png);
+    background-size: cover;
+    background-position: center;
 }
