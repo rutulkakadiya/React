@@ -1,4 +1,5 @@
 import React from 'react'
+import 'animate.css';
 
 export default function Home() {
     return (
@@ -109,7 +110,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="team-area fix">
+                <section className="team-area fix" style={{backgroundColor : "black"}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -155,7 +156,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <div className="gallery-area section-padding30">
+                <div className="gallery-area section-padding30" style={{backgroundColor : "black"}}>
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6">
@@ -258,7 +259,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <section className="pricing-area section-padding40 fix">
+                <section className="pricing-area section-padding40 fix" style={{backgroundColor : "black"}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -433,7 +434,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="about-area2 fix pb-padding pt-50 pb-80">
+                <section className="about-area2 fix pb-padding pt-50 pb-80" style={{backgroundColor : "black"}}>
                     <div className="support-wrapper align-items-center">
                         <div className="right-content2">
 
@@ -457,7 +458,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="home-blog-area pt-10 pb-50">
+                <section className="home-blog-area pt-10 pb-50" style={{backgroundColor : "black"}}>
                     <div className="container">
 
                         <div className="row justify-content-center">
@@ -498,7 +499,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <div className="video-area section-bg2 d-flex align-items-center" data-background="assets/img/gallery/video-bg.png">
+                <div className="video-area section-bg2 d-flex align-items-center" data-background="/public/assets/img/gallery/video-bg.png">
                     <div className="container">
                         <div className="video-wrap position-relative">
                             <div className="video-icon" >

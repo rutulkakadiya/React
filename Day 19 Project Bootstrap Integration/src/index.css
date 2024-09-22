@@ -1,3 +1,33 @@
-*{
-  background-color: black;
+.video-area{
+  background-image: url(../public/assets/img/gallery/video-bg.png);
+}
+
+.gallery-img {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 400px; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover .overlay {
+  opacity: 1; 
+}
+
+.overlay-content {
+  color: white;
+  text-align: center;
 }
