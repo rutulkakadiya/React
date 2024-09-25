@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.todoList{
+    height: auto;
+    width: 40%;
+    border: 1px solid black;
+    margin-top: 25vh;
+}
+
+input{
+    height: 45px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+table{
+    width: 100%;
+    margin-top: 30px;
+}
+
+tr{
+    height: 20px;
+    border: 1px solid black;
+}
+
+td{
+    width: 25%;
+    height: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
