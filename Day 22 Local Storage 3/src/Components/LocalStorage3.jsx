@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
-export default function LocalStorage3() {
+export default function LocalStorage() {
 
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
 
-    const [nameErr, setNameErr] = useState("");
-    const [passwordErr, setPasswordErr] = useState("");
-
     const [record, setRecord] = useState([]);
+    const [ediIndex, setediIndex] = useState(null);
 
     useEffect(() => {
         const saveData = JSON.parse(localStorage.getItem("UserData")) || [];
@@ -17,48 +15,53 @@ export default function LocalStorage3() {
     }, []);
 
     const handleSubmit = () => {
-        if (!name) {
-            setNameErr("*Name required")
-        }
-        else {
-            setNameErr("")
-        }
 
-        if (!password) {
-            setPasswordErr("*Password required")
+        if (ediIndex) {
+            const updateData = record.map((item) =>
+                item.id === ediIndex ? { ...item, name, password } : item)
+
+            setRecord(updateData)
+
+            localStorage.setItem("UserData", JSON.stringify(updateData));
+
+        } else {
+            let user = { id: Date.now(), name, password }
+            record.push(user)
+            localStorage.setItem("UserData", JSON.stringify(record));
+
+            const addedData = JSON.parse(localStorage.getItem("UserData"));
+            setRecord(addedData)
+
+            setName("");
+            setPassword("");
         }
-        else {
-            setPasswordErr("")
-        }
-
-        let user = { id: Date.now() , name, password }
-        record.push(user)
-        localStorage.setItem("UserData", JSON.stringify(record));
-
-        const addedData = JSON.parse(localStorage.getItem("UserData"));
-        setRecord(addedData)
-
-        setName("1");
-        setPassword("");
     }
 
-    const handleDelete = (id)=>{
+    const handleDelete = (id) => {
         const deleteData = record.filter((item) => item.id !== id)
         console.log(deleteData);
-        
+
         setRecord(deleteData)
-        localStorage.setItem("UserData" , JSON.stringify(deleteData))
+        localStorage.setItem("UserData", JSON.stringify(deleteData))
+    }
+
+    const handleEdit = (id) => {
+        const editData = record.find((item) => item.id == id)
+
+        setName(editData.name)
+        setPassword(editData.password)
+        setediIndex(id)
     }
 
     return (
 
         <div>
 
-            <input type="text" placeholder='Enter Name' onChange={(e) => setName(e.target.value)} />
-            <p>{nameErr}</p> <br /><br />
-            <input type="text" placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)} />
-            <p>{passwordErr}</p> <br /><br />
-            <button onClick={handleSubmit}>Add Data</button>
+            <input type="text" placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)} />
+            <br /><br />
+            <input type="text" placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+            <br /><br />
+            <button onClick={handleSubmit}>{ediIndex ? "Update" : "Add Data"}</button>
 
 
             <div>
@@ -81,7 +84,7 @@ export default function LocalStorage3() {
                                         <td>{e.id}</td>
                                         <td>{e.name}</td>
                                         <td>{e.password}</td>
-                                        <td><button>Edit</button></td>
+                                        <td><button onClick={() => handleEdit(e.id)}>Edit</button></td>
                                         <td><button onClick={() => handleDelete(e.id)}>Delete</button></td>
                                     </tr>
                                 </tbody>
