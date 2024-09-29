@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.btn1{
+    height: 45px;
+    width: 150px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+button{
+    height: 45px;
+    padding-inline: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
