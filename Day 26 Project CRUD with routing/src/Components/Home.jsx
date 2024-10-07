@@ -5,7 +5,8 @@ export default function Home({ data }) {
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Red & White Multimedia Education</h1>
+      <h1>Student Record</h1>
       <Link to={"/Create"}>Create</Link>
       <Link to={"/Delete"}>Delete</Link>
       <Link to={"/Update"}>Update</Link>

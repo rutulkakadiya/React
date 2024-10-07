@@ -18,7 +18,7 @@ export default function Create({ data, setData }) {
 
   return (
     <div className="create-container">
-      <h1 className="create-title">Create</h1>
+      <h1 className="create-title">Add Student Data</h1>
       <input 
         type="text" 
         placeholder="Enter name" 

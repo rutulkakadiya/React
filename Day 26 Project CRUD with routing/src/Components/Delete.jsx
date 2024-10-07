@@ -16,6 +16,7 @@ export default function Delete({ data, setData }) {
 
   return (
     <div className="delete-container">
+      <h1>Delete Student Data</h1>
       <input 
         type="text" 
         placeholder="Enter ID" 

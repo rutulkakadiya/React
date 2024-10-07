@@ -29,6 +29,7 @@ export default function Update({ data, setData }) {
 
   return (
     <div className="update-container">
+      <h1>Update Student Data</h1>
       <input 
         type="text" 
         placeholder="Enter ID" 
