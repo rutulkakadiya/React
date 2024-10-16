@@ -28,7 +28,7 @@ export default function TaskManager() {
     } else {
       if (task && taskDes && taskManager) {
         dispatch(addTask({ id: Date.now(), task, taskDes, taskManager, priority, image }));
-  
+
         setTaskName("");
         setTaskDes("");
         setTaskManager("");
@@ -105,16 +105,18 @@ export default function TaskManager() {
           <p>High</p>
           {count.task.map((e) => {
             return e.priority === "High" ? (
-              <tr key={e.id}>
-                <td>{e.id}</td>
-                <td>{e.task}</td>
-                <td>{e.taskDes}</td>
-                <td>{e.taskManager}</td>
-                <td>{e.priority}</td>
-                <td><img className="task-image" src={e.image} alt="" /></td>
-                <td><button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button></td>
-                <td><button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button></td>
-              </tr>
+
+              <div className="div">
+                <img className="task-image" src={e.image} alt="" />
+                <p>Task: {e.task}</p>
+                <p>Task Description: {e.taskDes}</p>
+                <p>Task Manager Name: {e.taskManager}</p>
+                <p>Task Priority: {e.priority}</p>
+
+                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+              </div>
+
             ) : null;
           })}
         </div>
@@ -123,16 +125,16 @@ export default function TaskManager() {
           <p>Medium</p>
           {count.task.map((e) => {
             return e.priority === "Medium" ? (
-              <tr key={e.id}>
-                <td>{e.id}</td>
-                <td>{e.task}</td>
-                <td>{e.taskDes}</td>
-                <td>{e.taskManager}</td>
-                <td>{e.priority}</td>
-                <td><img className="task-image" src={e.image} alt="" /></td>
-                <td><button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button></td>
-                <td><button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button></td>
-              </tr>
+              <div className="div">
+                <img className="task-image" src={e.image} alt="" />
+                <p>Task: {e.task}</p>
+                <p>Task Description: {e.taskDes}</p>
+                <p>Task Manager Name: {e.taskManager}</p>
+                <p>Task Priority: {e.priority}</p>
+
+                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+              </div>
             ) : null;
           })}
         </div>
@@ -141,16 +143,16 @@ export default function TaskManager() {
           <p>Low</p>
           {count.task.map((e) => {
             return e.priority === "Low" ? (
-              <tr key={e.id}>
-                <td>{e.id}</td>
-                <td>{e.task}</td>
-                <td>{e.taskDes}</td>
-                <td>{e.taskManager}</td>
-                <td>{e.priority}</td>
-                <td><img className="task-image" src={e.image} alt="" /></td>
-                <td><button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button></td>
-                <td><button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button></td>
-              </tr>
+              <div className="div">
+                <img className="task-image" src={e.image} alt="" />
+                <p>Task: {e.task}</p>
+                <p>Task Description: {e.taskDes}</p>
+                <p>Task Manager Name: {e.taskManager}</p>
+                <p>Task Priority: {e.priority}</p>
+
+                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+              </div>
             ) : null;
           })}
         </div>
