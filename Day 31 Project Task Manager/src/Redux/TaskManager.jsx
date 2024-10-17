@@ -8,7 +8,7 @@ export default function TaskManager() {
   const [taskManager, setTaskManager] = useState("");
   const [priority, setPriority] = useState("");
   const [image, setImage] = useState(null);
-  const [editIndex, setEditIndex] = useState(null); 
+  const [editIndex, setEditIndex] = useState(null);
 
   const count = useSelector((state) => state.taskKey);
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ export default function TaskManager() {
 
   const addRecord = () => {
     if (editIndex !== null) {
-      
+
       if (task && taskDes && taskManager && priority) {
         dispatch(updateTask({ id: editIndex, task, taskDes, taskManager, priority, image }));
 
@@ -38,7 +38,7 @@ export default function TaskManager() {
         alert("Please fill all fields.");
       }
     } else {
-      
+
       if (task && taskDes && taskManager && priority) {
         dispatch(addTask({ id: Date.now(), task, taskDes, taskManager, priority, image }));
 
@@ -64,7 +64,7 @@ export default function TaskManager() {
     setTaskManager(editData.taskManager);
     setPriority(editData.priority);
     setImage(editData.image);
-    setEditIndex(id); 
+    setEditIndex(id);
   };
 
   return (
@@ -114,12 +114,13 @@ export default function TaskManager() {
       <button className="btn-submit" onClick={addRecord}>{editIndex ? "Update" : "Add"}</button>
 
       <div className="main-div">
-        {/* High Priority Section */}
         <div className="priority-section high-priority">
           <p>High</p>
           {count.task.map((e) => e.priority === "High" && (
             <div className="div" key={e.id}>
-              <img className="task-image" src={e.image} alt="" />
+              <center>
+                <img className="task-image" src={e.image} alt="" />
+              </center>
               <p>Task: {e.task}</p>
               <p>Task Description: {e.taskDes}</p>
               <p>Task Manager Name: {e.taskManager}</p>
@@ -133,12 +134,13 @@ export default function TaskManager() {
           ))}
         </div>
 
-        {/* Medium Priority Section */}
         <div className="priority-section medium-priority">
           <p>Medium</p>
           {count.task.map((e) => e.priority === "Medium" && (
             <div className="div" key={e.id}>
-              <img className="task-image" src={e.image} alt="" />
+              <center>
+                <img className="task-image" src={e.image} alt="" />
+              </center>
               <p>Task: {e.task}</p>
               <p>Task Description: {e.taskDes}</p>
               <p>Task Manager Name: {e.taskManager}</p>
@@ -151,12 +153,13 @@ export default function TaskManager() {
           ))}
         </div>
 
-        {/* Low Priority Section */}
         <div className="priority-section low-priority">
           <p>Low</p>
           {count.task.map((e) => e.priority === "Low" && (
             <div className="div" key={e.id}>
-              <img className="task-image" src={e.image} alt="" />
+              <center>
+                <img className="task-image" src={e.image} alt="" />
+              </center>
               <p>Task: {e.task}</p>
               <p>Task Description: {e.taskDes}</p>
               <p>Task Manager Name: {e.taskManager}</p>
