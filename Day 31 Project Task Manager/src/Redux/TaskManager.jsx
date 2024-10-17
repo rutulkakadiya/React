@@ -8,7 +8,7 @@ export default function TaskManager() {
   const [taskManager, setTaskManager] = useState("");
   const [priority, setPriority] = useState("");
   const [image, setImage] = useState(null);
-  const [editIndex, setEditIndex] = useState("");
+  const [editIndex, setEditIndex] = useState(null); 
 
   const count = useSelector((state) => state.taskKey);
   const dispatch = useDispatch();
@@ -23,18 +23,30 @@ export default function TaskManager() {
   };
 
   const addRecord = () => {
-    if (editIndex === null) {
-      dispatch(updateTask(editIndex));
-      setEditIndex(null);
+    if (editIndex !== null) {
+      
+      if (task && taskDes && taskManager && priority) {
+        dispatch(updateTask({ id: editIndex, task, taskDes, taskManager, priority, image }));
+
+        setEditIndex(null);
+        setTaskName("");
+        setTaskDes("");
+        setTaskManager("");
+        setPriority("");
+        setImage(null);
+      } else {
+        alert("Please fill all fields.");
+      }
     } else {
-      if (task && taskDes && taskManager) {
+      
+      if (task && taskDes && taskManager && priority) {
         dispatch(addTask({ id: Date.now(), task, taskDes, taskManager, priority, image }));
 
         setTaskName("");
         setTaskDes("");
         setTaskManager("");
         setPriority("");
-        setImage("");
+        setImage(null);
       } else {
         alert("Please fill all fields.");
       }
@@ -52,7 +64,7 @@ export default function TaskManager() {
     setTaskManager(editData.taskManager);
     setPriority(editData.priority);
     setImage(editData.image);
-    setEditIndex(id);
+    setEditIndex(id); 
   };
 
   return (
@@ -102,64 +114,59 @@ export default function TaskManager() {
       <button className="btn-submit" onClick={addRecord}>{editIndex ? "Update" : "Add"}</button>
 
       <div className="main-div">
+        {/* High Priority Section */}
         <div className="priority-section high-priority">
           <p>High</p>
-          {count.task.map((e) => {
-            return e.priority === "High" ? (
+          {count.task.map((e) => e.priority === "High" && (
+            <div className="div" key={e.id}>
+              <img className="task-image" src={e.image} alt="" />
+              <p>Task: {e.task}</p>
+              <p>Task Description: {e.taskDes}</p>
+              <p>Task Manager Name: {e.taskManager}</p>
+              <p>Task Priority: {e.priority}</p>
 
-              <div className="div">
-                <img className="task-image" src={e.image} alt="" />
-                <p>Task: {e.task}</p>
-                <p>Task Description: {e.taskDes}</p>
-                <p>Task Manager Name: {e.taskManager}</p>
-                <p>Task Priority: {e.priority}</p>
-
-                <center>
-                  <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
-                  <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
-                </center>
-              </div>
-
-            ) : null;
-          })}
+              <center>
+                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+              </center>
+            </div>
+          ))}
         </div>
 
+        {/* Medium Priority Section */}
         <div className="priority-section medium-priority">
           <p>Medium</p>
-          {count.task.map((e) => {
-            return e.priority === "Medium" ? (
-              <div className="div">
-                <img className="task-image" src={e.image} alt="" />
-                <p>Task: {e.task}</p>
-                <p>Task Description: {e.taskDes}</p>
-                <p>Task Manager Name: {e.taskManager}</p>
-                <p>Task Priority: {e.priority}</p>
-                <center>
-                  <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
-                  <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
-                </center>
-              </div>
-            ) : null;
-          })}
+          {count.task.map((e) => e.priority === "Medium" && (
+            <div className="div" key={e.id}>
+              <img className="task-image" src={e.image} alt="" />
+              <p>Task: {e.task}</p>
+              <p>Task Description: {e.taskDes}</p>
+              <p>Task Manager Name: {e.taskManager}</p>
+              <p>Task Priority: {e.priority}</p>
+              <center>
+                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+              </center>
+            </div>
+          ))}
         </div>
 
+        {/* Low Priority Section */}
         <div className="priority-section low-priority">
           <p>Low</p>
-          {count.task.map((e) => {
-            return e.priority === "Low" ? (
-              <div className="div">
-                <img className="task-image" src={e.image} alt="" />
-                <p>Task: {e.task}</p>
-                <p>Task Description: {e.taskDes}</p>
-                <p>Task Manager Name: {e.taskManager}</p>
-                <p>Task Priority: {e.priority}</p>
-                <center>
-                  <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
-                  <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
-                </center>
-              </div>
-            ) : null;
-          })}
+          {count.task.map((e) => e.priority === "Low" && (
+            <div className="div" key={e.id}>
+              <img className="task-image" src={e.image} alt="" />
+              <p>Task: {e.task}</p>
+              <p>Task Description: {e.taskDes}</p>
+              <p>Task Manager Name: {e.taskManager}</p>
+              <p>Task Priority: {e.priority}</p>
+              <center>
+                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+              </center>
+            </div>
+          ))}
         </div>
       </div>
     </div>
