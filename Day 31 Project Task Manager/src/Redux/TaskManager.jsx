@@ -25,6 +25,7 @@ export default function TaskManager() {
   const addRecord = () => {
     if (editIndex === null) {
       dispatch(updateTask(editIndex));
+      setEditIndex(null);
     } else {
       if (task && taskDes && taskManager) {
         dispatch(addTask({ id: Date.now(), task, taskDes, taskManager, priority, image }));
@@ -113,8 +114,10 @@ export default function TaskManager() {
                 <p>Task Manager Name: {e.taskManager}</p>
                 <p>Task Priority: {e.priority}</p>
 
-                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
-                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+                <center>
+                  <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                  <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+                </center>
               </div>
 
             ) : null;
@@ -131,9 +134,10 @@ export default function TaskManager() {
                 <p>Task Description: {e.taskDes}</p>
                 <p>Task Manager Name: {e.taskManager}</p>
                 <p>Task Priority: {e.priority}</p>
-
-                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
-                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+                <center>
+                  <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                  <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+                </center>
               </div>
             ) : null;
           })}
@@ -149,9 +153,10 @@ export default function TaskManager() {
                 <p>Task Description: {e.taskDes}</p>
                 <p>Task Manager Name: {e.taskManager}</p>
                 <p>Task Priority: {e.priority}</p>
-
-                <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
-                <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+                <center>
+                  <button className="btn-edit" onClick={() => editRecord(e.id)}>Edit</button>
+                  <button className="btn-delete" onClick={() => deleteRecord(e.id)}>Delete</button>
+                </center>
               </div>
             ) : null;
           })}

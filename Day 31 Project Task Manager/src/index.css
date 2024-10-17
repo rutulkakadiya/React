@@ -264,4 +264,79 @@ body {
   }
   
 
+  .priority-section {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .high-priority {
+    background-color: #ffcccc; /* Light red for high priority */
+    border: 2px solid #ff4d4d; /* Red border */
+  }
+  
+  .medium-priority {
+    background-color: #fff0b3; /* Light yellow for medium priority */
+    border: 2px solid #ffd11a; /* Yellow border */
+  }
+  
+  .low-priority {
+    background-color: #ccffcc; /* Light green for low priority */
+    border: 2px solid #33cc33; /* Green border */
+  }
+  
+  .div {
+    margin: 15px 0;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .div:hover {
+    transform: scale(1.05);
+  }
+  
+  .task-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  p {
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: 500;
+  }
+  
+  .btn-edit, .btn-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-edit {
+    background-color: #4CAF50; /* Green for edit */
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-delete {
+    background-color: #f44336; /* Red for delete */
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background-color: #e53935;
+  }
   
