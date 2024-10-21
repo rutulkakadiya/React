@@ -11,7 +11,7 @@ export default function APIWithJsonCRUD() {
     const [image, setImage] = useState("");
     const [description, setDescription] = useState("");
     const [price, setPrice] = useState("");
-    const [editIndex, setEditIndex] = useState("");
+    const [editIndex, setEditIndex] = useState(null);
 
     const fetchAPI = async () => {
         let response = await axios.get("http://localhost:5000/Data");
@@ -38,6 +38,8 @@ export default function APIWithJsonCRUD() {
 
             const updateList = data.map((item) => item.id === editIndex ? updatedData : item);
             setData(updateList);
+
+            setEditIndex("");
         }
     };
 
@@ -70,14 +72,16 @@ export default function APIWithJsonCRUD() {
                             <center>
                                 <img className='h-[350px] rounded-t-lg w-full object-cover' src={e.image} alt="" />
                             </center>
-                            <p className="font-bold">{i + 1}</p>
                             <p>{e.description}</p>
-                            <p>{e.price} <del>{e.deletePrice}</del></p>
-                            <p>{e.discount}</p>
+
+                            <p className='text-[#956623] font-bold text-[18px] mt-2'>{e.price} <del className='text-[14px] text-[#8b8989] font-normal'>{e.deletePrice}</del></p>
+                            <div className="discount bg-[#956623] flex justify-center items-center h-[20px] w-[60px] rounded-[7px]">
+                                <p className='text-white text-[10px]'>{e.discount}</p>
+                            </div>
                             <a href="#addData">
-                                <button className='bg-yellow-500 text-white rounded px-3 py-1' onClick={() => handleEditResponse(e.id)}>Edit</button>
+                                <button className='bg-yellow-500 mt-3 text-white rounded px-3 py-1' onClick={() => handleEditResponse(e.id)}>Edit</button>
                             </a>
-                            <button className='bg-red-500 text-white rounded px-3 py-1 ml-2' onClick={() => handleDeleteResponse(e.id)}>Delete</button>
+                            <button className='bg-red-500 mt-3 text-white rounded px-3 py-1 ml-2' onClick={() => handleDeleteResponse(e.id)}>Delete</button>
                         </div>
                     );
                 })}

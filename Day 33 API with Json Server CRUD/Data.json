@@ -217,33 +217,10 @@
       "discount": "Save 50%"
     },
     {
-      "id": "60e7",
-      "description": "D",
-      "price": "lms;c"
-    },
-    {
-      "id": "b40f",
-      "image": "",
-      "description": "Perfume",
-      "price": "500"
-    },
-    {
-      "id": "4851",
-      "image": "blob:http://localhost:5173/646e30bf-7dd2-4641-b955-08749da46a4a",
-      "description": "vfdj",
-      "price": "fbdknl "
-    },
-    {
-      "id": "23a4",
-      "image": "",
-      "description": "knln",
-      "price": "v"
-    },
-    {
-      "id": "2d16",
-      "image": "",
-      "description": "",
-      "price": ""
+      "id": "4cf8",
+      "image": "blob:http://localhost:5173/7eb2c980-5950-4bdf-8f1e-0e4fb773f926",
+      "description": "Perufme set 3",
+      "price": "700"
     }
   ]
 }
