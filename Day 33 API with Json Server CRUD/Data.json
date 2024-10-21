@@ -1,0 +1,249 @@
+{
+  "Data": [
+    {
+      "id": "1",
+      "image": "/Packof6shanaya.jpg",
+      "hoverImage": "/Packofsix.4.jpg",
+      "description": "Assorted Luxury Attar Perfume Gift Set (6 × 5.5Ml)",
+      "review": "(3,025)",
+      "price": "₹1,499",
+      "deletePrice": "₹2,999",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "2",
+      "image": "/OudhAHashimi_.jpg",
+      "hoverImage": "/OudhAlHashmi.jpg",
+      "description": "Oudh Al Hashmi Luxury Attar Perfume",
+      "review": "(516)",
+      "price": "₹399",
+      "deletePrice": "₹599",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "3",
+      "image": "/Luvish_Musk_5.5m.jpg",
+      "hoverImage": "/LavishMusk.jpg",
+      "description": "Lavish Musk Premium Attar Perfume",
+      "review": "(741)",
+      "price": "₹399",
+      "deletePrice": "₹599",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "4",
+      "image": "/B_e6a60dee-0b10-4b02-8116-a22bb3acca3e.png",
+      "hoverImage": "/A_61f55f4e-e37a-44c8-98ad-712b80cdadde.png",
+      "description": "Taabish Luxury Attar Perfume",
+      "review": "(1,628)",
+      "price": "₹399",
+      "deletePrice": "₹599",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "5",
+      "image": "/Leader12ml.1.jpg",
+      "description": "Leader Luxury Attar Perfumedskm;l",
+      "price": "₹599"
+    },
+    {
+      "id": "6",
+      "image": "/B_cf63878c-9412-4ce5-b4f2-4fb763ee9597.png",
+      "hoverImage": "/Safwan12ml.6.jpg",
+      "description": "AQ 365 Luxury Attar Perfume",
+      "review": "(39)",
+      "price": "₹399",
+      "deletePrice": "₹599",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "22",
+      "image": "/C.png",
+      "hoverImage": "/C.png",
+      "description": "AQ Aqua Luxury Attar Perfume",
+      "review": "(21)",
+      "price": "₹399",
+      "deletePrice": "₹599",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "7",
+      "image": "/B_af5c33f3-68c2-45fb-b0d2-4c7d1f5af51a.png",
+      "hoverImage": "/Safwan12ml.6.jpg",
+      "description": "Safwan Luxury Attar Perfume",
+      "review": "(242)",
+      "price": "₹399",
+      "deletePrice": "₹599",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "8",
+      "image": "/WhatsAppImage.jpg",
+      "hoverImage": "/WhatsAppImage.jpg",
+      "description": "3 Pcs Attar Set Shanaya, AQ Aqua And AQ 365 5.5 ML Each",
+      "review": "(9)",
+      "price": "₹899",
+      "deletePrice": "₹1,797",
+      "discount": "Save 50%"
+    },
+    {
+      "id": "9",
+      "image": "/Shanaya_White.jpg",
+      "hoverImage": "/Shanaya_White.jpg",
+      "description": "2 Pcs Attar Set Shanaya And White Oudh And 12 ML Each",
+      "review": "(101)",
+      "price": "₹1,099",
+      "deletePrice": "₹2,049",
+      "discount": "Save 46%"
+    },
+    {
+      "id": "10",
+      "image": "/whrender1.png",
+      "hoverImage": "/whrender3.2_.png",
+      "description": "Assorted Luxury Attar Perfume Gift Set (6 × 5.5Ml)",
+      "review": "(3,025)",
+      "price": "₹1,499",
+      "deletePrice": "₹2,999",
+      "discount": "Save 33%"
+    },
+    {
+      "id": "11",
+      "image": "/mushkghazalipnggboxnbottle.png",
+      "hoverImage": "/ghazalibottle.png",
+      "description": "Musk Al Ghazali Luxury Attar Perfume",
+      "review": "(14)",
+      "price": "₹599",
+      "deletePrice": "₹1,199",
+      "discount": "Save 50%"
+    },
+    {
+      "id": "12",
+      "image": "/5.5mlcomboShanaya_Lavishmusk_Shanayagold.jpg",
+      "hoverImage": "/5.5mlcomboShanaya_Lavishmusk_Shanayagold.jpg",
+      "description": "3 Pcs Attar Set Shanaya, Lavish Musk And Shanaya Gold 5.5 Ml Each",
+      "review": "(11)",
+      "price": "₹899",
+      "deletePrice": "₹1,797",
+      "discount": "Save 50%"
+    },
+    {
+      "id": "13",
+      "image": "/Shanaya_W.oudh_OudhalHashmi.jpg",
+      "hoverImage": "/Shanaya_W.oudh_OudhalHashmi.jpg",
+      "description": "3 Pcs Oudh Attar Set White Oudh, Shanaya And Oudh Al Hashmi 12 ML Each",
+      "review": "(186)",
+      "price": "₹1,399",
+      "deletePrice": "₹2,999",
+      "discount": "Save 53%"
+    },
+    {
+      "id": "14",
+      "image": "/WhatsAppImage2024-07-09at1.33.28PM_2.jpg",
+      "hoverImage": "/WhatsAppImage2024-07-09at1.33.28PM_2.jpg",
+      "description": "3 Pcs Attar Set Shanaya, Safwan And Oudh AL Hashmi 5.5 ML Each",
+      "review": "(5)",
+      "price": "₹899",
+      "deletePrice": "₹1,797",
+      "discount": "Save 50%"
+    },
+    {
+      "id": "15",
+      "image": "/shanaya_gold-.jpg",
+      "hoverImage": "/shanaya_gold-.jpg",
+      "description": "2 Pcs Attar Set Shanaya And Shanaya Gold Attar 12 ML Each",
+      "review": "(20)",
+      "price": "₹1,099",
+      "deletePrice": "₹1,798",
+      "discount": "Save 39%"
+    },
+    {
+      "id": "16",
+      "image": "/Shanaya_Lavismusk.jpg",
+      "hoverImage": "/Shanaya_Lavismusk.jpg",
+      "description": "2 Pcs Attar Set Shanaya And Lavish Musk 5.5 Ml Each",
+      "review": "(11)",
+      "price": "₹699",
+      "deletePrice": "₹1,198",
+      "discount": "Save 42%"
+    },
+    {
+      "id": "17",
+      "image": "/amazing_041246ee-8a62-4e17-b1ce-00ba7f0a399a.jpg",
+      "hoverImage": "/Shanaya20ml.3.jpg",
+      "description": "Amazing Oudh Attar Perfume 20 ML",
+      "review": "(4)",
+      "price": "₹599",
+      "deletePrice": "₹1,799",
+      "discount": "Save 67%"
+    },
+    {
+      "id": "18",
+      "image": "/WhatsAppImage2024-07-09at1.33.28PM_4.jpg",
+      "hoverImage": "/WhatsAppImage2024-07-09at1.33.28PM_4.jpg",
+      "description": "3 Pcs Attar Set Shanaya, Taabish And Oudh AL Hashmi 5.5 ML Each",
+      "review": "(3)",
+      "price": "₹899",
+      "deletePrice": "₹1,797",
+      "discount": "Save 50%"
+    },
+    {
+      "id": "19",
+      "image": "/Shanaya_-_Oudh_AL_Hashmi_Combo.jpg",
+      "hoverImage": "/Shanaya_-_Oudh_AL_Hashmi_Combo.jpg",
+      "description": "2 Pcs Attar Set Shanaya And Oudh Al Hashmi Attar 12 ML Each",
+      "review": "(6)",
+      "price": "₹1,099",
+      "deletePrice": "₹1,999",
+      "discount": "Save 45%"
+    },
+    {
+      "id": "20",
+      "image": "/5.5mlcomboShanaya_Lavishmusk_OudhAlHashmi.jpg",
+      "hoverImage": "/5.5mlcomboShanaya_Lavishmusk_OudhAlHashmi.jpg",
+      "description": "3 Pcs Attar Set Shanaya, Lavish Musk And Oudh Al Hashmi 5.5 Ml Each",
+      "review": "(9)",
+      "price": "₹899",
+      "deletePrice": "₹1,797",
+      "discount": "Save 50%"
+    },
+    {
+      "id": "21",
+      "image": "/WhatsAppImage2024-07.jpg",
+      "hoverImage": "/WhatsAppImage2024-07.jpg",
+      "description": "3 Pcs Attar Set Shanaya, Safwan And Taabish 5.5 ML Each",
+      "review": "(3)",
+      "price": "₹899",
+      "deletePrice": "₹1,797",
+      "discount": "Save 50%"
+    },
+    {
+      "id": "60e7",
+      "description": "D",
+      "price": "lms;c"
+    },
+    {
+      "id": "b40f",
+      "image": "",
+      "description": "Perfume",
+      "price": "500"
+    },
+    {
+      "id": "4851",
+      "image": "blob:http://localhost:5173/646e30bf-7dd2-4641-b955-08749da46a4a",
+      "description": "vfdj",
+      "price": "fbdknl "
+    },
+    {
+      "id": "23a4",
+      "image": "",
+      "description": "knln",
+      "price": "v"
+    },
+    {
+      "id": "2d16",
+      "image": "",
+      "description": "",
+      "price": ""
+    }
+  ]
+}
