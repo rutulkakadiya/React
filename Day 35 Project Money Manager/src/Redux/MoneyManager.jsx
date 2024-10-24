@@ -42,7 +42,7 @@ export default function MoneyManager() {
             <div className="flex justify-between mt-5">
                 <div className="h-36 w-[48%] bg-[#e8f9cc] rounded-lg flex items-center">
                     <div className="w-1/2 flex justify-center">
-                        <img className="h-16" src="/balance-image.png" alt="" />
+                        <img className="h-[100px]" src="/balance-image.png" alt="" />
                     </div>
                     <div className="w-1/2">
                         <center>
@@ -54,7 +54,7 @@ export default function MoneyManager() {
 
                 <div className="h-36 w-[48%] bg-[#eee8fe] flex justify-between items-center rounded-lg">
                     <div className="w-1/2 flex justify-center">
-                        <img className="h-16" src="/expenses-image.png" alt="" />
+                        <img className="h-[100px]" src="/expenses-image.png" alt="" />
                     </div>
                     <div className="w-1/2">
                         <center>
