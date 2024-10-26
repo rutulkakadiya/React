@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.hero_section {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/aboutbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_section h1 {
+    font-family: "Domine", serif;
+    font-size: 50px;
+    color: white;
+}
+
+header {
+    height: 130px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 70px;
+    position: fixed;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 30px;
+}
+
+nav ul li {
+    padding-inline: 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menubar {
+    display: none;
+    cursor: pointer;
+}
+
+.menuBarDiv {
+    height: auto;
+    position: absolute;
+    top: 150px;
+    border-radius: 30px;
+    background-color: #febc30;
+    z-index: 100;
+    display: none;
+}
+
+.menuBarDiv ul {
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+.menuBarDiv ul li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.menuBarDiv ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuBarDiv ul li a:hover {
+    color: white;
+}
+
+#closeIcon {
+    margin-top: 25px;
+    margin-left: 93%;
+}
+
+.mainDivs{
+    width: 90%;
+    margin-left: 5%;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 {
+    width: 90%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.footer2 {
+    width: 25%;
+    /* border: 1px solid white; */
+    margin-top: 30px;
+}
+
+.footer2 h1 {
+    font-size: 23px;
+    font-family: "Domine", serif;
+    color: white;
+}
+
+.footer2 ul {
+    margin-top: 20px;
+}
+
+.footer2 ul li {
+    color: #919598;
+    list-style: none;
+    line-height: 30px;
+}
+
+.footer2 ul li:hover {
+    color: #febc30;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contactBox{
+    height: 45px;
+    width: 45px;
+    background-color: #fabc2e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    color: white;
+    margin-left: 15px;
+}
+
+.contact p:hover{
+    color: #fabc2e;
+}
+
+.mainDivs h1{
+    font-family: "Domine", serif;
+}

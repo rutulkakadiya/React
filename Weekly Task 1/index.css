@@ -1,0 +1,502 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.hero_section {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 130px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 70px;
+    position: fixed;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 30px;
+}
+
+nav ul li {
+    padding-inline: 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menubar {
+    display: none;
+    cursor: pointer;
+}
+
+
+.menuBarDiv {
+    height: auto;
+    position: absolute;
+    top: 150px;    
+    border-radius: 30px;
+    background-color: #febc30;
+    z-index: 100;
+    display: none;
+}
+
+.menuBarDiv ul{
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+.menuBarDiv ul li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.menuBarDiv ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuBarDiv ul li a:hover{
+    color: white;
+}
+#closeIcon{
+    margin-top: 25px;
+    margin-left: 93%;
+}
+
+.mainDiv1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+}
+
+.mainDiv1 .txt p {
+    font-size: 14px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.mainDiv1 .txt h1 {
+    font-size: 60px;
+    color: white;
+    font-family: "Domine", serif;
+    margin-top: 10px;
+}
+
+.mainDiv1 .txt h3 {
+    color: white;
+    width: 40%;
+    font-weight: normal;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btn1 {
+    height: 50px;
+    width: 180px;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    transition-duration: 0.5s;
+}
+
+.btn1 .div {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #fabc2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    transition-duration: 0.5s;
+}
+
+.btn1:hover {
+    background-color: #fabc2e;
+    color: black;
+}
+
+.btn1:hover .div {
+    background-color: white;
+    color: black;
+}
+
+.mainDiv2 {
+    display: flex;
+    margin-top: 150px;
+}
+
+.subDiv1 {
+    width: 50%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.img1 {
+    margin-left: 15%;
+    border-radius: 30px;
+}
+
+.subDiv1 .img2 {
+    border-radius: 30px;
+    margin-left: 2%;
+}
+
+.since {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #fabc2e;
+    position: absolute;
+    top: -80px;
+    right: -30px;
+    border: 10px solid white;
+    z-index: 1;
+    animation: animate1 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+@keyframes animate1 {
+    50% {
+        position: absolute;
+        top: -70px;
+    }
+}
+
+.txt1 p {
+    font-family: "Domine", serif;
+    font-size: 25px;
+}
+
+.txt1 h1 {
+    font-family: "Domine", serif;
+    font-size: 50px;
+}
+
+.subDiv2 {
+    width: 80%;
+    margin-left: 10%;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.subDiv2 h1 {
+    font-family: "Domine", serif;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.subDiv2 span {
+    width: 90%;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.subDiv3 {
+    width: 80%;
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.subDiv4 {
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subDiv4 .txts {
+    margin: 30px;
+    /* border: 1px solid black; */
+}
+
+.subDiv4 .txts p {
+    font-size: 20px;
+    font-family: "Domine", serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.subDiv4 .txts span {
+    line-height: 25px;
+    color: #4b4d4f;
+}
+
+.mainDiv3 {
+    background-color: #f7f4ed;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mainDiv3 p {
+    color: #4b4d4f;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.mainDiv3 h1 {
+    font-family: "Domine", serif;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.subDiv5{
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+}
+
+.subDiv6{
+    width: 31%;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.subDiv7{
+    width: 85%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subDiv7 h3{
+    font-family: "Domine", serif;
+    margin-top: 25px;
+}
+
+.subDiv7 span{
+    line-height: 25px;
+    text-align: justify;
+}
+
+.mainDiv4{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    background-image: url(/Images/restaurants-bg.png);
+    margin-top: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subDiv8 .txts{
+    margin-left: 5%;
+}
+
+.subDiv8 .txts h1{
+    font-family: "Domine", serif;
+    font-size: 55px;
+    color: white;
+    width: 80%;
+}
+.subDiv8 .txts p{
+    color: #c3c8cd;
+    margin-top: 30px;
+}
+.subDiv9{
+    overflow: hidden;
+}
+
+.img3{
+    animation: animate2 40s linear infinite;
+}
+
+@keyframes animate2 {
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+.divs{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+.subDiv10{
+    height: 150px;
+    width: 23%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/info-bar-1.jpg);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.subDiv11{
+    height: 150px;
+    width: 23%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/info-bar-2.jpg);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.subDiv12{
+    height: 150px;
+    width: 23%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/info-bar-3.jpg);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.subDiv13{
+    height: 150px;
+    width: 23%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/info-bar-4.jpg);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.txts1{
+    color: white;
+    text-align: center;
+}
+
+.txts1 h1{
+    font-size: 50px;
+    font-family: "Domine", serif;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer1{
+    width: 90%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.footer2{
+    width: 25%;
+    /* border: 1px solid white; */
+    margin-top: 30px;
+}
+
+.footer2 h1{
+    font-size: 23px;
+    font-family: "Domine", serif;
+    color: white;
+}
+
+.footer2 ul {
+    margin-top: 20px;
+}
+
+.footer2 ul li{
+    color: #919598;
+    list-style: none;
+    line-height: 30px;
+}
+
+.footer2 ul li:hover{    
+    color: #febc30;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contactBox{
+    height: 45px;
+    width: 45px;
+    background-color: #fabc2e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    color: white;
+    margin-left: 15px;
+}
+
+.contact p:hover{
+    color: #fabc2e;
+}

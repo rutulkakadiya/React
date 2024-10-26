@@ -1,0 +1,238 @@
+@media (min-width: 0px) and (max-width: 640px) {
+    #menubar {
+        display: block;
+        padding-right: 30px;
+    }
+    header {
+        width: 90%;
+        height: 80px;
+        border-radius: 50px;
+    }
+    header img {
+        height: 70px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    .menuBarDiv {
+        width: 90%;
+        margin-left: 5%;
+        position: absolute;
+        top: 100px;
+    }
+    .mainDiv1 .txt p {
+        font-size: 12px;
+    }
+
+    .mainDiv1 .txt h1 {
+        font-size: 30px;
+    }
+
+    .mainDiv1 .txt h3 {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .btn1 {
+        display: none;
+    }
+
+    .mainDiv2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .subDiv1 {
+        width: 100%;
+    }
+
+    .subDiv1 .img1 {
+        margin-left: 5%;
+    }
+
+    .subDiv1 .img2 {
+        margin-left: 5%;
+    }
+
+    .since {
+        display: none;
+    }
+
+    .subDiv2 {
+        margin-top: 30px;
+    }
+
+    .subDiv2 p {
+        font-size: 14px;
+    }
+
+    .subDiv2 h1 {
+        font-size: 20px;
+    }
+
+    .subDiv2 span {
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+        line-height: 20px;
+    }
+
+    .subDiv3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .subDiv4 {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .subDiv5{
+        margin-top: 10px;
+    }
+    .subDiv6{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .mainDiv3 h1{
+        font-size: 30px;
+    }
+    .mainDiv4{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .subDiv8{        
+        display: none;
+    }
+    .subDiv9 img{
+        height: 200px;
+    }
+    .subDiv10{
+        height: 200px;
+        width: 48%;
+    }
+    .subDiv11{
+        height: 200px;
+        width: 48%;
+    }
+    .subDiv12{
+        height: 200px;
+        width: 48%;
+        margin-top: 30px;
+    }
+    .subDiv13{
+        height: 200px;
+        width: 48%;
+        margin-top: 30px;
+    }
+    .footer2{
+        width: 100%;
+    }
+}
+
+/* change */
+
+@media (min-width: 641px) and (max-width: 968px) {
+    #menubar {
+        display: block;
+        padding-right: 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menuBarDiv {
+        width: 50%;
+    }
+
+    .mainDiv1 .txt h1 {
+        font-size: 50px;
+    }
+
+    .mainDiv1 .txt h3 {
+        width: 80%;
+    }
+
+    .subDiv1 .img2 {
+        display: none;
+    }
+
+    .subDiv4 {
+        display: none;
+    }
+    .subDiv5{
+        margin-top: 30px;
+    }
+    .subDiv6{
+        width: 48%;
+        margin-top: 30px;
+    }
+    .mainDiv3 h1{
+        font-size: 40px;
+    }
+    .mainDiv4{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .subDiv8{
+        display: none;
+    }
+    .subDiv10{
+        height: 200px;
+        width: 48%;
+    }
+    .subDiv11{
+        height: 200px;
+        width: 48%;
+    }
+    .subDiv12{
+        height: 200px;
+        width: 48%;
+        margin-top: 30px;
+    }
+    .subDiv13{
+        height: 200px;
+        width: 48%;
+        margin-top: 30px;
+    }
+    .footer2{
+        width: 50%;
+    }
+    .menuBarDiv {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* change */
+
+@media (min-width: 968px) and (max-width: 1200px) {
+    .subDiv1{
+        width: 50%;
+        display: flex;
+    }
+    .subDiv1 .img1{
+        margin-left: 2%;
+    }
+    .subDiv2{
+        width: 100%;    
+        margin-left: 0%;    
+    }
+    .subDiv3 {
+        display: none;
+    }
+    .since {
+        display: none;
+    }
+    .subDiv1 .img2 {
+        display: none;
+    }
+    .subDiv1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

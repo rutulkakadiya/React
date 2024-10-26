@@ -1,0 +1,439 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.hero_section {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/aboutbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_section h1{
+    font-family: "Domine", serif;
+    font-size: 50px;
+    color: white;
+}
+
+header {
+    height: 130px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 70px;
+    position: fixed;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 30px;
+}
+
+nav ul li {
+    padding-inline: 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menubar {
+    display: none;
+    cursor: pointer;
+}
+
+.menuBarDiv {
+    height: auto;
+    position: absolute;
+    top: 150px;    
+    border-radius: 30px;
+    background-color: #febc30;
+    z-index: 100;
+    display: none;
+}
+
+.menuBarDiv ul{
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+.menuBarDiv ul li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.menuBarDiv ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuBarDiv ul li a:hover{
+    color: white;
+}
+#closeIcon{
+    margin-top: 25px;
+    margin-left: 93%;
+}
+
+.mainDiv2 {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.subDiv1 {
+    width: 50%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.img1 {
+    margin-left: 15%;
+    border-radius: 30px;
+}
+
+.subDiv1 .img2 {
+    border-radius: 30px;
+    margin-left: 2%;
+}
+
+.since {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #fabc2e;
+    position: absolute;
+    top: -80px;
+    right: -30px;
+    border: 10px solid white;
+    z-index: 1;
+    animation: animate1 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+@keyframes animate1 {
+    50% {
+        position: absolute;
+        top: -70px;
+    }
+}
+
+.txt1 p {
+    font-family: "Domine", serif;
+    font-size: 25px;
+}
+
+.txt1 h1 {
+    font-family: "Domine", serif;
+    font-size: 50px;
+}
+
+.subDiv2 {
+    width: 80%;
+    margin-left: 10%;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.subDiv2 h1 {
+    font-family: "Domine", serif;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.subDiv2 span {
+    width: 90%;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.subDiv3 {
+    width: 80%;
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.subDiv4 {
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subDiv4 .txts {
+    margin: 30px;
+    /* border: 1px solid black; */
+}
+
+.subDiv4 .txts p {
+    font-size: 20px;
+    font-family: "Domine", serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.subDiv4 .txts span {
+    line-height: 25px;
+    color: #4b4d4f;
+}
+
+.mainDiv3{
+    background-color: #f7f4ed;
+}
+
+.mainDiv3 p{
+    color: #4b4d4f;
+    padding-top: 100px;
+}
+
+.mainDiv3 h1{
+    font-size: 45px;
+    font-family: "Domine", serif;
+    margin-top: 15px;
+}
+
+.gallery {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.gallery-image {
+    width: 32%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.slider {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.slider-img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid #fff;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev, .next {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.mainDiv4{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    background-image: url(/Images/restaurants-bg.png);
+    margin-top: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subDiv8 .txts{
+    margin-left: 5%;
+}
+
+.subDiv8 .txts h1{
+    font-family: "Domine", serif;
+    font-size: 55px;
+    color: white;
+    width: 80%;
+}
+.subDiv8 .txts p{
+    color: #c3c8cd;
+    margin-top: 30px;
+}
+.subDiv9{
+    overflow: hidden;
+}
+
+.img3{
+    animation: animate2 40s linear infinite;
+}
+
+@keyframes animate2 {
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btn1 {
+    height: 50px;
+    width: 180px;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    transition-duration: 0.5s;
+}
+
+.btn1 .div {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #fabc2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    transition-duration: 0.5s;
+}
+
+.btn1:hover {
+    background-color: #fabc2e;
+    color: black;
+}
+
+.btn1:hover .div {
+    background-color: white;
+    color: black;
+}
+
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer1{
+    width: 90%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.footer2{
+    width: 25%;
+    /* border: 1px solid white; */
+    margin-top: 30px;
+}
+
+.footer2 h1{
+    font-size: 23px;
+    font-family: "Domine", serif;
+    color: white;
+}
+
+.footer2 ul {
+    margin-top: 20px;
+}
+
+.footer2 ul li{
+    color: #919598;
+    list-style: none;
+    line-height: 30px;
+}
+
+.footer2 ul li:hover{    
+    color: #febc30;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contactBox{
+    height: 45px;
+    width: 45px;
+    background-color: #fabc2e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    color: white;
+    margin-left: 15px;
+}
+
+.contact p:hover{
+    color: #fabc2e;
+}
