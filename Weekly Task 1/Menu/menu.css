@@ -96,7 +96,7 @@ nav ul li a {
     margin-left: 93%;
 }
 
-.mainDivs{
+.mainDivs {
     width: 90%;
     margin-left: 5%;
 }
@@ -141,13 +141,13 @@ footer {
     color: #febc30;
 }
 
-.contact{
+.contact {
     display: flex;
     align-items: center;
     margin-top: 15px;
 }
 
-.contactBox{
+.contactBox {
     height: 45px;
     width: 45px;
     background-color: #fabc2e;
@@ -157,15 +157,80 @@ footer {
     align-items: center;
 }
 
-.contact p{
+.contact p {
     color: white;
     margin-left: 15px;
 }
 
-.contact p:hover{
+.contact p:hover {
     color: #fabc2e;
 }
 
-.mainDivs h1{
+.mainDivs h1 {
     font-family: "Domine", serif;
+}
+
+.menuMainDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+
+.menuMainDiv .menuDetails {
+    width: 23%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menuMainDiv .menuDetails img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.menuText{
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.Menu{
+    /* border: 1px solid black; */
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.menuText h1 {
+    font-weight: normal;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.menuText p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.menuBtn{
+    height: 40px;
+    width: 95%;
+    border: 0px;
+    background-color: #ef7f01;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.AddToCartDiv{
+    height: 100vh;
+    width: 25%;
+    border: 1px solid black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    z-index: 100;
+    display: none;
 }
