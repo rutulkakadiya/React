@@ -49,7 +49,7 @@ export default function ServiceFirst() {
             </div>
 
             <div className="pricing_div flex justify-between flex-wrap mt-[25px] w-[90%] ms-[5%] lg:ms-[0px] lg:w-[100%]">
-                <div className="price1 w-[100%] md:w-[48%] lg:w-[32%] text-[var(--text-color)] mt-[25px] pt-[35px] bg-[var(--skill-color)] transform transition duration-500 hover:scale-105 hover:border border-[var(--green-color)]">
+                <div data-aos="fade-up" data-aos-duration="3000" className="price1 w-[100%] md:w-[48%] lg:w-[32%] text-[var(--text-color)] mt-[25px] pt-[35px] bg-[var(--skill-color)] transform transition duration-500 hover:scale-105 hover:border border-[var(--green-color)]">
                     <center>
                         <p>Basic</p>
                         <p className='text-[var(--green-color)] text-4xl font-semibold'>₹ 30,000/-</p>
@@ -86,7 +86,7 @@ export default function ServiceFirst() {
                     </center>
                 </div>
 
-                <div className="price1 relative w-[100%] md:w-[48%] lg:w-[32%] text-[var(--text-color)] mt-[25px] pt-[35px] bg-[var(--skill-color)] overflow-hidden transform transition duration-500 hover:scale-105 hover:border border-[var(--green-color)]">
+                <div data-aos="fade-up" data-aos-duration="3000" className="price1 relative w-[100%] md:w-[48%] lg:w-[32%] text-[var(--text-color)] mt-[25px] pt-[35px] bg-[var(--skill-color)] overflow-hidden transform transition duration-500 hover:scale-105 hover:border border-[var(--green-color)]">
                     <div className="most_popular h-[45px] w-[120px] bg-[var(--green-color)] rotate-[90deg] absolute top-[38px] left-[70%] flex justify-start items-center" style={{ borderRadius: "0px 30px 30px 0px" }}>
                         <p className='text-[var(--text2-color)] ms-2'>Most Popular</p>
                     </div>
@@ -126,7 +126,7 @@ export default function ServiceFirst() {
                     </center>
                 </div>
 
-                <div className="price1 w-[100%] md:w-[48%] lg:w-[32%] text-[var(--text-color)] mt-[25px] pt-[35px] bg-[var(--skill-color)] transform transition duration-500 hover:scale-105 hover:border border-[var(--green-color)]">
+                <div data-aos="fade-up" data-aos-duration="3000" className="price1 w-[100%] md:w-[48%] lg:w-[32%] text-[var(--text-color)] mt-[25px] pt-[35px] bg-[var(--skill-color)] transform transition duration-500 hover:scale-105 hover:border border-[var(--green-color)]">
                     <center>
                         <p>Premium</p>
                         <p className='text-[var(--green-color)] text-4xl font-semibold'>₹ 45,000/-</p>
@@ -196,7 +196,7 @@ export default function ServiceFirst() {
                             </p>
 
                             <br /><br />
-                            <Accordion className="custom-accordion" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -216,7 +216,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -235,7 +235,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -255,7 +255,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -275,7 +275,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
