@@ -1,0 +1,14 @@
+.custom-accordion-summary {
+    height: 90px;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.custom-expand-icon {
+    color: var(--text-color);
+}

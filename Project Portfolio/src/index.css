@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Jost", sans-serif;
+    src: url(../public/Jost/Jost-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+:root {
+    --bg-color: #fff;
+    --green-color: #78aaa7;
+    --text-color: #000;
+    --header-color: white;
+    --text2-color: #fff;
+    --btn-color: #4f4f4f;
+}
+
+.light-theme {
+    --bg-color: #fff;
+    --text-color: #000;
+    --header-color: white;
+    --skill-color: #fafafa;
+    --text2-color: #fff;
+    --btn-color: black;
+}
+
+.dark-theme {
+    --bg-color: #292929;
+    --text-color: #fff;
+    --header-color: #4f4f4f;
+    --skill-color: #4f4f4f;
+    --text2-color: #000;
+    --btn-color: #4f4f4f;
+}

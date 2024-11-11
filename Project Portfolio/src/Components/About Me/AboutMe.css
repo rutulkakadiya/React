@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.bgImage{
+    transform: rotate(10deg);
+    animation: animate1 8s linear infinite;
+}
+
+@keyframes animate1 {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.projectDiv{
+    height: auto;
+    background-image: url(/public/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.projects .project1 {
+    overflow: hidden; 
+  }
+  
+  .projects .project1 img {
+    height: auto;
+    width: 100%;
+    animation: none; 
+    animation-play-state: paused; 
+  }
+  
+  .projects .project1:hover img {
+    animation: scrollImage 10s linear infinite forwards;
+    animation-play-state: running; 
+  }
+  
+  @keyframes scrollImage {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
