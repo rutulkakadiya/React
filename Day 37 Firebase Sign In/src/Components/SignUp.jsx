@@ -10,10 +10,15 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [city, setCity] = useState("");
   const [hobby, setHobby] = useState("");
-
+  const [error, setError] = useState("");
+  
   const navigate = useNavigate();
 
   const handleSubmit = () => {
+    if (!name || !email || !password || !city || !hobby) {
+      setError("*Please fill all fields.");
+      return;
+    }
     createUserWithEmailAndPassword(auth, email, password)
       .then(data => {
         setDoc(doc(db, "users", data.user.uid), { name, email, city, hobby });
@@ -33,6 +38,9 @@ export default function SignUp() {
       <input type="password" placeholder="Enter password" onChange={(e) => setPassword(e.target.value)} className="signup-input" />
       <input type="text" placeholder="Enter city" onChange={(e) => setCity(e.target.value)} className="signup-input" />
       <input type="text" placeholder="Enter hobby" onChange={(e) => setHobby(e.target.value)} className="signup-input" />
+
+      {error && <p style={{color: "red"}} className="error-message">{error}</p>}
+
       <button onClick={handleSubmit} className="signup-button">Submit</button>
       <p onClick={handleSignIn} className="signin-link">Sign In</p>
     </div>
