@@ -16,6 +16,10 @@ export default function SignIn() {
       })
 
   };
+  
+  const handleSignUp = () => {
+    navigate("/");
+  };
 
   return (
     <div className="signin-container">
@@ -36,6 +40,7 @@ export default function SignIn() {
       <button onClick={handleSubmit} className="signin-button">
         Login
       </button>
+      <p onClick={handleSignUp} className="signin-link">Sign Up?</p>
     </div>
   );
 }
