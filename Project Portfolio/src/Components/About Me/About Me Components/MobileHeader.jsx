@@ -77,7 +77,7 @@ export default function MobileHeader() {
                     </div>
 
                     <div
-                        className={`colorDiv absolute top-[50px] flex justify-around flex-wrap items-center h-[80px] w-[130px] right-[15px] bg-[var(--header-color)] border border-white rounded-[10px] transition-all duration-500 ${showSlideDiv ? 'top-[50px]+' : 'top-[-90px]'
+                        className={`colorDiv absolute top-[50px] flex justify-around flex-wrap items-center h-[80px] w-[130px] right-[15px] bg-[var(--header-color)] border border-white rounded-[10px] transition-all duration-500 ${showSlideDiv ? 'right-[0px]' : 'right-[-120px]'
                             }`}
                     >
                         <div onClick={() => applyColor("#78aaa7")} className="color1 h-[30px] w-[26%] bg-[#78aaa7]"></div>
