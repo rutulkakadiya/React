@@ -34,7 +34,7 @@ export default function SignUp() {
       <input type="text" placeholder="Enter city" onChange={(e) => setCity(e.target.value)} className="signup-input" />
       <input type="text" placeholder="Enter hobby" onChange={(e) => setHobby(e.target.value)} className="signup-input" />
       <button onClick={handleSubmit} className="signup-button">Submit</button>
-      <p onClick={handleSignIn} className="signin-link">Login</p>
+      <p onClick={handleSignIn} className="signin-link">Sign In</p>
     </div>
   );
 }
