@@ -1,0 +1,281 @@
+.home-container {
+    padding: 30px;
+}
+
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.task-card {
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.task-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.task-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.task-description,
+.task-assignto,
+.task-category,
+.task-priority,
+.task-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.task-status {
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.task-status.pending {
+    background-color: #e74c3c;
+}
+
+.task-status.ongoing {
+    background-color: #f39c12;
+}
+
+.task-status.complete {
+    background-color: #2ecc71;
+}
+
+.task-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-edit, .btn-delete {
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #56b689;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #45a27e;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.add-task-card {
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 2px solid #56b689;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.add-icon {
+    font-size: 40px;
+    color: #56b689;
+}
+
+.add-text {
+    font-size: 16px;
+    color: #56b689;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .task-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .add-task-card {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+    height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 45%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.form h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #333;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.input-field:focus {
+    border: 1px solid #56b689;
+    outline: none;
+    background-color: #e8f9f1;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #56b689;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3e9a66;
+}
+
+select.input-field {
+    background-color: #fafafa;
+}
+
+select.input-field option {
+    color: #333;
+}
+
+/* Animation for Button */
+.submit-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.submit-btn:hover:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .form h2 {
+        font-size: 24px;
+    }
+
+    .input-field {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
