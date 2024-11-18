@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { auth, database } from '/firebaseConfig';
+import { database, auth } from '/firebaseConfig';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
+import { onAuthStateChanged } from "firebase/auth"; 
 
 export default function AddTask() {
     const location = useLocation();
@@ -12,8 +13,21 @@ export default function AddTask() {
     const [priority, setPriority] = useState("");
     const [taskAssignTo, setTaskAssignTo] = useState("");
     const [category, setCategory] = useState("");
+    const [email, setEmail] = useState(""); 
 
     const editTask = location.state ? location.state.task : null;
+
+    
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setEmail(user.email); 
+            } else {
+                setEmail("");
+            }
+        });
+        return () => unsubscribe(); 
+    }, []);
 
     useEffect(() => {
         if (editTask) {
@@ -30,17 +44,26 @@ export default function AddTask() {
     const navigate = useNavigate();
 
     const addData = async () => {
+       
+
+        const taskData = {
+            task,
+            description,
+            date,
+            status,
+            priority,
+            taskAssignTo,
+            category,
+            email, 
+        };
+
         if (editTask) {
-            const user = auth.currentUser;
-            const taskData = { task, description, date, status, priority, taskAssignTo, category, email: user.email, };
             await updateDoc(doc(database, "TaskDetails", location.state.task.docId), taskData);
-            navigate("/taskmanager/home");
         } else {
-            const user = auth.currentUser;
-            const taskData = { task, description, date, status, priority, taskAssignTo, category, email: user.email, };
             await addDoc(collection(database, "TaskDetails"), taskData);
-            navigate("/taskmanager/home");
         }
+
+        navigate("/taskmanager/home");
     };
 
     return (
