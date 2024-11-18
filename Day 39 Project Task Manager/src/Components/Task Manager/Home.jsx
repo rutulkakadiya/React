@@ -53,7 +53,7 @@ export default function Home() {
                     {
                         taskRecord &&
                         taskRecord
-                            .filter((task) => task.email === user?.email) // Filter tasks by the logged-in user's email
+                            .filter((task) => task.email === user?.email) 
                             .map((tasks) => (
                                 <div key={tasks.docId} className='task-card w-[23%] h-auto pt-[30px] pb-[30px] mt-[30px]'>
                                     <p className='task-title'>Title: {tasks.task}</p>
