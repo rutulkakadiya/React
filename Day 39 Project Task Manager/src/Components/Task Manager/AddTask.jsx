@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { database } from '/firebaseConfig';
+import { auth, database } from '/firebaseConfig';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { addDoc, collection, doc, updateDoc } from 'firebase/firestore';
 
@@ -31,11 +31,13 @@ export default function AddTask() {
 
     const addData = async () => {
         if (editTask) {
-            const taskData = { task, description, date, status, priority, taskAssignTo, category };
+            const user = auth.currentUser;
+            const taskData = { task, description, date, status, priority, taskAssignTo, category, email: user.email, };
             await updateDoc(doc(database, "TaskDetails", location.state.task.docId), taskData);
             navigate("/taskmanager/home");
         } else {
-            const taskData = { task, description, date, status, priority, taskAssignTo, category };
+            const user = auth.currentUser;
+            const taskData = { task, description, date, status, priority, taskAssignTo, category, email: user.email, };
             await addDoc(collection(database, "TaskDetails"), taskData);
             navigate("/taskmanager/home");
         }
