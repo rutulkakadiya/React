@@ -10,7 +10,7 @@ export default function SecondSection() {
   }
 
   return (
-    <div className='pt-[50px] pb-[80px] border border-[#4f4f4f] overflow-hidden' style={{ borderBottom: "0px" }}>
+    <div className='pt-[30px] mt-[70px] pb-[80px] border border-[#4f4f4f] overflow-hidden' style={{ borderBottom: "0px" }}>
       <br /><br /><br />
       <div className="div w-[95%] ms-[2.5%] sm:w-[90%] sm:ms-[5%] lg:w-[98%] lg:ms-[1%]">
         <div className="div">
@@ -31,8 +31,8 @@ export default function SecondSection() {
         </div>
 
         <div className="skillMainDiv mt-5 flex justify-between flex-wrap">
-          <div className="skill1 h-[30vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
-            <div className="skillDes h-[70%] w-[80%]">
+          <div className="skill1 h-[38vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
+            <div className="skillDes h-[70%] w-[90%] sm:w-[80%]">
               <img src="/html.png" alt="" />
               <p className='mt-2 text-2xl text-[var(--text-color)]'>HTML5</p>
 
@@ -42,8 +42,8 @@ export default function SecondSection() {
             </div>
           </div>
 
-          <div className="skill1 h-[30vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
-            <div className="skillDes h-[70%] w-[80%]">
+          <div className="skill1 h-[38vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
+            <div className="skillDes h-[70%] w-[90%] sm:w-[80%]">
               <img src="/css.png" alt="" />
               <p className='mt-2 text-2xl text-[var(--text-color)]'>CSS3</p>
 
@@ -53,8 +53,8 @@ export default function SecondSection() {
             </div>
           </div>
 
-          <div className="skill1 h-[30vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
-            <div className="skillDes h-[70%] w-[80%]">
+          <div className="skill1 h-[38vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
+            <div className="skillDes h-[70%] w-[90%] sm:w-[80%]">
               <img className='h-[35px]' src="/grunt.png" alt="" />
               <p className='mt-3 text-2xl text-[var(--text-color)]'>Media Query</p>
 
@@ -64,8 +64,8 @@ export default function SecondSection() {
             </div>
           </div>
 
-          <div className="skill1 h-[30vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
-            <div className="skillDes h-[70%] w-[80%]">
+          <div className="skill1 h-[38vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
+            <div className="skillDes h-[70%] w-[90%] sm:w-[80%]">
               <img className='h-[45px]' src="/images-removebg-preview.png" alt="" />
               <p className='mt-2 text-2xl text-[var(--text-color)]'>Bootstrap</p>
 
@@ -75,8 +75,8 @@ export default function SecondSection() {
             </div>
           </div>
 
-          <div className="skill1 h-[30vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
-            <div className="skillDes h-[70%] w-[80%]">
+          <div className="skill1 h-[38vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
+            <div className="skillDes h-[70%] w-[90%] sm:w-[80%]">
               <img className='h-[35px]' src="/png-transparent-tailwind-css-hd-logo-thumbnail-removebg-preview.png" alt="" />
               <p className='mt-3 text-2xl text-[var(--text-color)]'>Tailwind CSS</p>
 
@@ -86,8 +86,8 @@ export default function SecondSection() {
             </div>
           </div>
 
-          <div className="skill1 h-[30vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
-            <div className="skillDes h-[70%] w-[80%]">
+          <div className="skill1 h-[38vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
+            <div className="skillDes h-[70%] w-[90%] sm:w-[80%]">
               <img className='h-[35px]' src="/js.png" alt="" />
               <p className='mt-3 text-2xl text-[var(--text-color)]'>JavaScript</p>
 
@@ -97,8 +97,8 @@ export default function SecondSection() {
             </div>
           </div>
 
-          <div className="skill1 h-[30vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
-            <div className="skillDes h-[70%] w-[80%]">
+          <div className="skill1 h-[38vh] sm:h-[35vh] mt-5 w-[90%] ms-[5%] sm:ms-[0%] sm:w-[48%] md:w-[32%] xl:w-[24%] bg-[var(--skill-color)] hover:bg-transparent transition flex justify-center items-center hover:border border-[var(--green-color)]">
+            <div className="skillDes h-[70%] w-[90%] sm:w-[80%]">
               <img className='h-[35px]' src="/react.png" alt="" />
               <p className='mt-3 text-2xl text-[var(--text-color)]'>React</p>
 

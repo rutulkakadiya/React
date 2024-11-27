@@ -16,7 +16,6 @@ export default function ServiceFirst() {
         navigate('/contact')
     })
 
-
     return (
 
         <div className='w-[98%] ms-[1%]'>
@@ -37,7 +36,7 @@ export default function ServiceFirst() {
 
             <div className="div mt-[50px] w-[90%] ms-[5%] lg:w-[98%] lg:ms-[1%]" data-aos="fade-right" data-aos-duration="3000">
                 <div className="heading1 flex items-center">
-                    <div className="line h-[60px] w-[4px] bg-[var(--green-color)]"></div>
+                    <div className="line h-[50px] sm:h-[60px] w-[4px] bg-[var(--green-color)]"></div>
                     <p className='text-4xl sm:text-5xl text-[var(--text-color)] ms-2 font-semibold' data-aos="fade-right">Service Packages</p>
                 </div>
 
@@ -196,7 +195,7 @@ export default function ServiceFirst() {
                             </p>
 
                             <br /><br />
-                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion className="custom-accordion" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -216,7 +215,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -235,7 +234,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -255,7 +254,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"
@@ -275,7 +274,7 @@ export default function ServiceFirst() {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion data-aos="fade-up" data-aos-duration="3000" className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
+                            <Accordion className="custom-accordion mt-3" style={{ backgroundColor: "transparent", border: "1px solid var(--text-color)" }}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon style={{ color: "var(--text-color)" }} />}
                                     aria-controls="panel1-content"

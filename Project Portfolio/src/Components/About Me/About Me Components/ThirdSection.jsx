@@ -8,8 +8,23 @@ import { useNavigate } from 'react-router-dom';
 
 export default function ThirdSection() {
 
-    const goToWeb = () => {
+    const goToWeb1 = () => {
         window.open("http://tubedcourtyard.in/");
+    }
+    const goToWeb2 = () => {
+        window.open("https://bright-gaufre-9c1987.netlify.app/home/home");
+    }
+    const goToWeb3 = () => {
+        window.open("https://elegant-caramel-b01382.netlify.app/home/home");
+    }
+    const goToWeb4 = () => {
+        window.open("https://celebrated-basbousa-ffa42f.netlify.app/home/home");
+    }
+    const goToWeb5 = () => {
+        window.open("https://luminous-madeleine-c2320f.netlify.app/home/home");
+    }
+    const goToWeb6 = () => {
+        window.open("https://ubiquitous-puffpuff-fd028b.netlify.app/");
     }
     
     const navigate = useNavigate();
@@ -30,22 +45,22 @@ export default function ThirdSection() {
                 </div>
 
                 <div className="btn me-3 sm:me-[5%] lg:me-3 w-auto mt-[0px] md:mt-[100px] mb-[70px] md:mb-[100px]" data-aos="fade-left" data-aos-duration="3000">
-                    <button onClick={goToContact} className='h-[40px] sm:h-[45px] md:h-[50px] w-[150px] sm:w-[180px] text-white text-[14px] sm:text-[16px] hover:bg-[var(--header-color)] flex justify-center items-center rounded-[30px] bg-[var(--green-color)]'>
+                    <button onClick={goToContact} className='h-[40px] sm:h-[45px] md:h-[50px] w-[150px] sm:w-[180px] ms-3 sm:ms-0 text-white text-[14px] sm:text-[16px] hover:bg-[var(--header-color)] flex justify-center items-center rounded-[30px] bg-[var(--green-color)]'>
                         <FaArrowRightLong className='me-3' />
                         Let`s get in touch</button>
                 </div>
             </div>
 
 
-            <div className="div w-[95%] ms-[2.5%] sm:w-[90%] sm:ms-[5%] lg:w-[100%] lg:ms-[0%]">
+            <div className="div w-[95%] ms-[3%] sm:w-[90%] sm:ms-[5%] lg:w-[100%] lg:ms-[0%]">
                 <div className="div mt-[100px]">
                     <div className="heading1 flex items-center" data-aos="fade-right" data-aos-duration="3000">
-                        <div className="line h-[60px] w-[4px] bg-[var(--green-color)]"></div>
-                        <p className='text-5xl text-[var(--text-color)] ms-2 font-semibold'>Featured Projects</p>
+                        <div className="line h-[50px] sm:h-[60px] w-[4px] bg-[var(--green-color)]"></div>
+                        <p className='text-4xl sm:text-5xl text-[var(--text-color)] ms-2 font-semibold'>Featured Projects</p>
                     </div>
 
-                    <div className="description flex justify-between items-center mt-3 text-[var(--text-color)]" data-aos="fade-right" data-aos-duration="3000">
-                        <p className='w-[55%]'>My step-by-step guide ensures a smooth project journey, from the initial consultation to the final delivery. I take
+                    <div className="description flex justify-between items-center flex-wrap mt-3 text-[var(--text-color)]" data-aos="fade-right" data-aos-duration="3000">
+                        <p className='w=[90%] sm:w-[55%]'>My step-by-step guide ensures a smooth project journey, from the initial consultation to the final delivery. I take
                             care of every detail, allowing you to focus on what you do best.</p>
 
                         <button onClick={goToPortfolio} className='h-[40px] sm:h-[45px] md:h-[50px] w-[150px] sm:w-[180px] text-white text-[14px] sm:text-[16px] hover:bg-[var(--header-color)] flex justify-center items-center rounded-[30px] mt-5 bg-[var(--green-color)]'>
@@ -68,7 +83,7 @@ export default function ThirdSection() {
 
                         <div className="heading flex justify-between items-center mt-3">
                             <p className='text-[var(--text-color)] text-2xl font-semibold'>Tubed Courtyard Restaurant Website</p>
-                            <div onClick={goToWeb} className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                            <div onClick={goToWeb1} className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                 <MdArrowOutward className='text-[20px]' />
                             </div>
                         </div>
@@ -88,7 +103,7 @@ export default function ThirdSection() {
 
                         <div className="heading flex justify-between items-center mt-3">
                             <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                            <div className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                            <div onClick={goToWeb2} className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                 <MdArrowOutward className='text-[20px]' />
                             </div>
                         </div>
@@ -109,7 +124,7 @@ export default function ThirdSection() {
 
                         <div className="heading flex justify-between items-center mt-3">
                             <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                            <div className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                            <div onClick={goToWeb3} className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                 <MdArrowOutward className='text-[20px]' />
                             </div>
                         </div>
@@ -129,7 +144,7 @@ export default function ThirdSection() {
 
                         <div className="heading flex justify-between items-center mt-3">
                             <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                            <div className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                            <div onClick={goToWeb4} className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                 <MdArrowOutward className='text-[20px]' />
                             </div>
                         </div>
@@ -151,7 +166,7 @@ export default function ThirdSection() {
 
                         <div className="heading flex justify-between items-center mt-3">
                             <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                            <div className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                            <div onClick={goToWeb5} className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                 <MdArrowOutward className='text-[20px]' />
                             </div>
                         </div>
@@ -171,7 +186,7 @@ export default function ThirdSection() {
 
                         <div className="heading flex justify-between items-center mt-3">
                             <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                            <div className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                            <div onClick={goToWeb6} className="link h-[50px] w-[50px] text-[var(--text-color)] cursor-pointer flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                 <MdArrowOutward className='text-[20px]' />
                             </div>
                         </div>
@@ -180,12 +195,12 @@ export default function ThirdSection() {
 
 
                 <div className="heading1 flex items-center mt-[70px]" data-aos="fade-right" data-aos-duration="3000">
-                    <div className="line h-[60px] w-[4px] bg-[var(--green-color)]"></div>
-                    <p className='text-5xl text-[var(--text-color)] ms-2 font-semibold'>Contact Details</p>
+                    <div className="line h-[50px] sm:h-[60px] w-[4px] bg-[var(--green-color)]"></div>
+                    <p className='text-4xl sm:text-5xl text-[var(--text-color)] ms-2 font-semibold'>Contact Details</p>
                 </div>
 
 
-                <p className='text-white mt-3 w-[70%]'>
+                <p className='text-white mt-3 w-[100%] sm:w-[70%]'>
                     Reach out to us for all your web development needs! Whether you have questions, need guidance, or are ready
                     to start your project, our team is here to help. Contact us via email, phone, or by filling out the form below,
                     and we'll get back to you promptly

@@ -6,8 +6,23 @@ import { MdArrowOutward } from 'react-icons/md';
 
 export default function Portfolio() {
     
-    const pr1Navigation = () => {
-        window.open("http://tubedcourtyard.in/")
+    const goToWeb1 = () => {
+        window.open("http://tubedcourtyard.in/");
+    }
+    const goToWeb2 = () => {
+        window.open("https://bright-gaufre-9c1987.netlify.app/home/home");
+    }
+    const goToWeb3 = () => {
+        window.open("https://elegant-caramel-b01382.netlify.app/home/home");
+    }
+    const goToWeb4 = () => {
+        window.open("https://celebrated-basbousa-ffa42f.netlify.app/home/home");
+    }
+    const goToWeb5 = () => {
+        window.open("https://luminous-madeleine-c2320f.netlify.app/home/home");
+    }
+    const goToWeb6 = () => {
+        window.open("https://ubiquitous-puffpuff-fd028b.netlify.app/");
     }
 
     return (
@@ -25,14 +40,13 @@ export default function Portfolio() {
 
                     <div className="div w-[95%] ms-[2.5%] sm:w-[90%] sm:ms-[5%] lg:w-[98%] lg:ms-[1%] mt-[50px]">
                         <div className="heading1 flex items-center" data-aos="fade-right" data-aos-duration="3000">
-                            <div className="line h-[60px] w-[4px] bg-[var(--green-color)]"></div>
-                            <p className='text-5xl text-[var(--text-color)] ms-2 font-semibold'>Featured Projects</p>
+                            <div className="line h-[50px] sm:h-[60px] w-[4px] bg-[var(--green-color)]"></div>
+                            <p className='text-4xl sm:text-5xl text-[var(--text-color)] ms-2 font-semibold'>Featured Projects</p>
                         </div>
 
                         <div className="description flex justify-between items-center mt-3 text-[var(--text-color)]" data-aos="fade-right" data-aos-duration="3000">
-                            <p className='w-[55%]'>My step-by-step guide ensures a smooth project journey, from the initial consultation to the final delivery. I take
+                            <p className='w-[100%] sm:w-[55%]'>My step-by-step guide ensures a smooth project journey, from the initial consultation to the final delivery. I take
                                 care of every detail, allowing you to focus on what you do best.</p>
-
                         </div>
                     </div>
 
@@ -51,7 +65,7 @@ export default function Portfolio() {
 
                             <div className="heading flex justify-between items-center mt-3">
                                 <p className='text-[var(--text-color)] text-2xl font-semibold'>Tubed Courtyard Restaurant Website</p>
-                                <div onClick={pr1Navigation} className="link h-[50px] w-[50px] cursor-pointer text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                                <div  onClick={goToWeb1} className="link h-[50px] w-[50px] cursor-pointer text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                     <MdArrowOutward className='text-[20px]' />
                                 </div>
                             </div>
@@ -71,7 +85,7 @@ export default function Portfolio() {
 
                             <div className="heading flex justify-between items-center mt-3">
                                 <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                                <div className="link h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                                <div onClick={goToWeb2} className="link cursor-pointer h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                     <MdArrowOutward className='text-[20px]' />
                                 </div>
                             </div>
@@ -92,7 +106,7 @@ export default function Portfolio() {
 
                             <div className="heading flex justify-between items-center mt-3">
                                 <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                                <div className="link h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                                <div onClick={goToWeb3} className="link cursor-pointer h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                     <MdArrowOutward className='text-[20px]' />
                                 </div>
                             </div>
@@ -112,7 +126,7 @@ export default function Portfolio() {
 
                             <div className="heading flex justify-between items-center mt-3">
                                 <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                                <div className="link h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                                <div onClick={goToWeb4} className="link cursor-pointer h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                     <MdArrowOutward className='text-[20px]' />
                                 </div>
                             </div>
@@ -134,7 +148,7 @@ export default function Portfolio() {
 
                             <div className="heading flex justify-between items-center mt-3">
                                 <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                                <div className="link h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                                <div onClick={goToWeb5} className="link cursor-pointer h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                     <MdArrowOutward className='text-[20px]' />
                                 </div>
                             </div>
@@ -154,7 +168,7 @@ export default function Portfolio() {
 
                             <div className="heading flex justify-between items-center mt-3">
                                 <p className='text-[var(--text-color)] text-2xl font-semibold'>Practice Website</p>
-                                <div className="link h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
+                                <div onClick={goToWeb6} className="link cursor-pointer h-[50px] w-[50px] text-[var(--text-color)] flex justify-center items-center rounded-[50%] bg-[var(--header-color)] hover:bg-[var(--green-color)]">
                                     <MdArrowOutward className='text-[20px]' />
                                 </div>
                             </div>

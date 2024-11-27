@@ -44,7 +44,7 @@ export default function FirstSection() {
                                 View Resume</button>
                         </div>
 
-                        <div className="experience flex flex-wrap lg:flex-nowrap mt-[50px] lg:mt-[150px] mb-[50px]">
+                        <div className="experience hidden sm:flex flex-wrap lg:flex-nowrap mt-[50px] lg:mt-[150px] mb-[50px]">
                             <div className="experience1 flex items-center">
                                 <p className='text-[var(--green-color)] text-5xl sm:text-7xl font-bold'>1</p>
                                 <p className='text-[var(--text-color)] ms-0 sm:ms-3'>Year of<br /> Experience</p>
@@ -62,7 +62,7 @@ export default function FirstSection() {
                 </div>
                 <div className="subDiv2 mt-[100px] lg:mt-[0px] w-[100%] lg:w-[40%] flex items-center justify-center lg:justify-end">
                     <div className="imageDiv relative me-0 lg:me-[30px] z-[-1]" data-aos="fade-left" data-aos-duration="2000">
-                        <div className="bgImage relative h-[45vh] md:h-[50vh] lg:h-[55vh] w-[300px] sm:w-[325px] xl:w-[350px] bg-[var(--green-color)]">
+                        <div className="bgImage relative h-[45vh] md:h-[50vh] lg:h-[55vh] w-[300px] sm:w-[380px] bg-[var(--green-color)]">
 
                         </div>
                         <img className='h-[100%] w-[100%] absolute top-0' src="/user.jpg" alt="" />

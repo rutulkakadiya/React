@@ -4,7 +4,7 @@ import { MdDarkMode } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AiOutlineUser } from "react-icons/ai";
 import { GoFileCode } from "react-icons/go";
 import { MdOutlineHomeRepairService } from "react-icons/md";
@@ -66,6 +66,19 @@ export default function MainHeader() {
     return location.pathname === path ? { backgroundColor: "var(--green-color)", color: "white" } : {};
   }
 
+
+  const navigate = useNavigate();
+    const navigate1 = (() => {
+        navigate('/contact')
+    })
+
+    const github = ()=>{
+      window.open('https://github.com/rutulkakadiya')  
+    }
+    
+    const linkedin = ()=>{
+      window.open('https://www.linkedin.com/in/kakadiya-rutul-b82312304/')  
+    }
   return (
     <div className='flex'>
       <div className="dynamicChangesDiv w-[20%]">
@@ -102,16 +115,16 @@ export default function MainHeader() {
       <div className="headerDiv h-[100vh] w-[80%] bg-[var(--skill-color)]">
         <center>
           <div className="profilePicture h-[90px] w-[90px] rounded-[50%] bg-[var(--green-color)] mt-[80px] flex justify-center items-end overflow-hidden">
-            <img src="/profile.png" alt="" />
+            <img src="/user.jpg" alt="" />
           </div>
           <p className='text-[var(--text-color)] text-[25px]'>Rutul Kakadiya</p>
           <p className='text-[var(--text-color)] text-[14px]'>Full Stack Developer</p>
 
           <div className="socialLogo flex justify-center mt-3 w-[100%]">
-            <div className="logo1 h-[30px] w-[30px] flex justify-center items-center text-[var(--green-color)] hover:text-white border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
+            <div onClick={github} className="logo1 h-[30px] w-[30px] cursor-pointer flex justify-center items-center text-[var(--green-color)] hover:text-white border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
               <FaGithub />
             </div>
-            <div className="logo2 h-[30px] w-[30px] flex justify-center items-center text-[var(--green-color)] hover:text-white ms-2 border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
+            <div onClick={linkedin} className="logo2 h-[30px] w-[30px] cursor-pointer flex justify-center items-center text-[var(--green-color)] hover:text-white ms-2 border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
               <FaLinkedin />
             </div>
           </div>
@@ -155,7 +168,7 @@ export default function MainHeader() {
           <br /><br /><br />
 
           <center>
-            <button className='h-[35px] w-[60%] cursor-pointer bg-[var(--green-color)] rounded-[30px] hover:bg-transparent hover:border border-white flex items-center justify-center text-[var(--text-color)] text-2xl ms-2'>
+            <button onClick={navigate1} className='h-[35px] w-[60%] cursor-pointer bg-[var(--green-color)] rounded-[30px] hover:bg-transparent hover:border border-white flex items-center justify-center text-[var(--text-color)] text-2xl ms-2'>
               <FiSend /> <p className='ms-2 text-[16px]'>Hire Me</p>
             </button>
           </center>

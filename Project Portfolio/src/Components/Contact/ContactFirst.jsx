@@ -6,6 +6,14 @@ import { FaRegCompass } from "react-icons/fa6";
 import { HiOutlineMailOpen } from "react-icons/hi";
 
 export default function ContactFirst() {
+  
+  const github = ()=>{
+    window.open('https://github.com/rutulkakadiya')  
+  }
+  
+  const linkedin = ()=>{
+    window.open('https://www.linkedin.com/in/kakadiya-rutul-b82312304/')  
+  }
   return (
     <div>
       <div className="txt text-[var(--text-color)] mt-[150px]">
@@ -18,10 +26,10 @@ export default function ContactFirst() {
             about my skills and experiences.</p>
 
           <div className="socialLogo flex justify-center mt-3 w-[100%]">
-            <div className="logo1 h-[30px] w-[30px] flex justify-center items-center text-[var(--green-color)] hover:text-white border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
+            <div onClick={github} className="logo1 h-[30px] w-[30px] cursor-pointer flex justify-center items-center text-[var(--green-color)] hover:text-white border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
               <FaGithub />
             </div>
-            <div className="logo2 h-[30px] w-[30px] flex justify-center items-center text-[var(--green-color)] hover:text-white ms-2 border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
+            <div onClick={linkedin} className="logo2 h-[30px] w-[30px] cursor-pointer flex justify-center items-center text-[var(--green-color)] hover:text-white ms-2 border border-[#848484] rounded-[50%] hover:bg-[var(--green-color)]">
               <FaLinkedin />
             </div>
           </div>
