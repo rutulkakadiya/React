@@ -25,7 +25,7 @@ export default function Home() {
         dispatch(dataSlice.actions.sortData({ option, productDatas: allData }))
     }
 
-    const displayProducts = sortOption !== "sorting" ? sortData : allData;
+    const displayProducts = sortOption !== "price" ? sortData : allData;
     const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes(search.toLocaleLowerCase()));
     return (
         <div>
@@ -33,16 +33,19 @@ export default function Home() {
             <Nav search={search} setSearch={setSearch} />
             <br />
             <div className="sorting flex justify-end w-[98%] ms-[1%]">
-                <select
-                    name=""
-                    id=""
-                    onClick={handleSortChange}
-                    class="bg-white border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-48 p-2.5 hover:shadow-lg transition-shadow duration-300"
-                >
-                    <option value="sorting">Sorting</option>
-                    <option value="lowToHigh">Price Low To High</option>
-                    <option value="highToLow">Price High To Low</option>
-                </select>
+                <div className='flex items-center bg-white border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-48 p-2.5 hover:shadow-lg transition-shadow duration-300'>
+                    <p>Sort By:</p>
+                    <select
+                        name=""
+                        id=""
+                        onClick={handleSortChange}
+                        className='outline-none'
+                    >
+                        <option value="price">Price</option>
+                        <option value="lowToHigh">Price Low To High</option>
+                        <option value="highToLow">Price High To Low</option>
+                    </select>
+                </div>
 
             </div>
             <br />

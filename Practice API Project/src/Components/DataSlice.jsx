@@ -10,7 +10,7 @@ export const dataSlice = createSlice({
     initialState: {
         allData: [],
         sortData: [],
-        sortOption: "sorting",
+        sortOption: "price",
         loading: true,
     },
     reducers: {
