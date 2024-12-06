@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { MdDelete } from "react-icons/md";
 import { FetchApi, addProduct, deleteProduct, updateProduct } from './Components/ItemSlice';
 import { FaEdit } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 export default function Home() {
 
@@ -16,7 +17,7 @@ export default function Home() {
     const [isVisibleAddDataDiv, setIsVisibleAddDataDiv] = useState(false);
     const hanldeAddDataDiv = () => {
         setIsVisibleAddDataDiv(true);
-    }
+    };
 
     const [image, setImage] = useState(null);
     const [title, setTitle] = useState("");
@@ -35,11 +36,11 @@ export default function Home() {
                 setImage(reader.result);
             };
         }
-    }
+    };
 
-    const handleAddProduct = async () => {
+    const handleAddProduct = () => {
         if (editIndex) {
-            const editProduct = { editIndex ,image, title, price, category, discountPrice, discount};
+            const editProduct = { editIndex, image, title, price, category, discountPrice, discount };
             dispatch(updateProduct(editProduct));
             setIsVisibleAddDataDiv(false);
             setEditIndex(null);
@@ -57,11 +58,15 @@ export default function Home() {
             setDiscountPrice("");
             setDiscount("");
         };
+    };
+
+    const handleClose = () => {
+        setIsVisibleAddDataDiv(false);
     }
 
     const handleDelete = (id) => {
         dispatch(deleteProduct(id));
-    }
+    };
 
     const handleEdit = (id) => {
         const editData = record.allData.find((item) => item.id === id);
@@ -84,7 +89,7 @@ export default function Home() {
         setIsVisibleAddDataDiv(true);
     };
 
-    
+
 
     return (
         <div>
@@ -119,8 +124,9 @@ export default function Home() {
             </div>
 
             {isVisibleAddDataDiv && (
-                <div className="addDataDiv h-[100vh] w-[100%] flex justify-center items-center bg-[#dcdddf] absolute top-0">
-                    <div className="addProduct w-[30%] border border-black rounded-[10px] p-5 bg-white">
+                <div className="addDataDiv h-[100vh] w-[100%] flex justify-center items-center bg-[#dcdddf] fixed top-0">
+                    <div className="addProduct w-[30%] rounded-[10px] p-5 bg-white relative">
+                        <IoClose className='absolute right-3 text-2xl cursor-pointer' onClick={handleClose} />
                         <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">Add Product</h2>
 
                         {/* Image Input */}
