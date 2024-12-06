@@ -1,0 +1,459 @@
+{
+  "Data": [
+    {
+      "image": "/iphone1.webp",
+      "title": "Apple iPhone 15 (Black, 128 GB)",
+      "price": "6099",
+      "category": "Mobile",
+      "discountPrice": "699000",
+      "discount": "12",
+      "editIndex": "1",
+      "id": "1"
+    },
+    {
+      "image": "/samsung1.webp",
+      "title": "SAMSUNG Galaxy S24+ 5G (Cobalt Violet, 256 GB) (12 GB RAM)",
+      "price": "64999",
+      "category": "Mobile",
+      "discountPrice": "99900",
+      "discount": "12",
+      "editIndex": "2",
+      "id": "2"
+    },
+    {
+      "image": "/samsung2.webp",
+      "title": "SAMSUNG Galaxy S24 Ultra 5G (Titanium Gray, 256 GB) (12 GB RAM)",
+      "price": "129999",
+      "category": "Mobile",
+      "discountPrice": "1349000",
+      "discount": "3",
+      "editIndex": "3",
+      "id": "3"
+    },
+    {
+      "image": "/samsung3.webp",
+      "title": "SAMSUNG Galaxy A14 5G (Dark Red, 128 GB) (6 GB RAM)",
+      "price": "15000",
+      "category": "Mobiles",
+      "discountPrice": "50000",
+      "discount": "45",
+      "editIndex": "4",
+      "id": "4"
+    },
+    {
+      "image": "/samsung4.webp",
+      "title": "SAMSUNG Galaxy A15 5G (Blue Black, 128 GB) (8 GB RAM)",
+      "price": "15999",
+      "category": "Mobiles",
+      "discountPrice": "21499",
+      "discount": "2",
+      "editIndex": "5",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "image": "/google1.webp",
+      "title": "Google Pixel 7a (Snow, 128 GB) (8 GB RAM)",
+      "category": "Mobiles",
+      "price": "33999",
+      "discountPrice": "43999",
+      "discount": "22"
+    },
+    {
+      "id": "7",
+      "image": "/google1.webp",
+      "title": "Google Pixel 9 (Porcelain, 256 GB)  (12 GB RAM)",
+      "category": "Mobiles",
+      "price": "79999",
+      "discountPrice": "85999",
+      "discount": "12"
+    },
+    {
+      "id": "8",
+      "image": "/realme1.webp",
+      "title": "realme P1 Pro 5G (Parrot Blue, 256 GB)  (12 GB RAM)",
+      "category": "Mobiles",
+      "price": "20999",
+      "discountPrice": "26900",
+      "discount": "22"
+    },
+    {
+      "id": "9",
+      "image": "/vivo1.webp",
+      "title": "vivo T3 Ultra (Frost Green, 256 GB)  (8 GB RAM)",
+      "category": "Mobiles",
+      "price": "33999",
+      "discountPrice": "37999",
+      "discount": "10"
+    },
+    {
+      "id": "10",
+      "image": "/poco1.webp",
+      "title": "POCO X6 5G (Snowstorm White, 512 GB) (12 GB RAM)",
+      "category": "Mobiles",
+      "price": "19499",
+      "discountPrice": " 27999",
+      "discount": "30"
+    },
+    {
+      "id": "11",
+      "image": "/airpod1.webp",
+      "title": "boAt Airdopes 161/163 (Pebble Black, Active Black, True Wireless)",
+      "category": "Airdopes",
+      "price": "899",
+      "discountPrice": "2490",
+      "discount": "63"
+    },
+    {
+      "id": "12",
+      "image": "/airpod2.webp",
+      "title": "boAt Airdopes 181 Pro (Mocha Elegance, True Wireless)",
+      "category": "Airdopes",
+      "price": "1199",
+      "discountPrice": "4990",
+      "discount": "75"
+    },
+    {
+      "id": "13",
+      "image": "/airpod3.webp",
+      "title": "boAt Airdopes 131 (King's Black, True Wireless)",
+      "category": "Airdopes",
+      "price": "899",
+      "discountPrice": "2990",
+      "discount": "69"
+    },
+    {
+      "id": "14",
+      "image": "/airpod4.webp",
+      "title": "boAt Airdopes 131 Pro Buds (Active Black, True Wireless)",
+      "category": "Airdopes",
+      "price": "999",
+      "discountPrice": "5490",
+      "discount": "81"
+    },
+    {
+      "id": "15",
+      "image": "/airpod5.webp",
+      "title": "boAt Airdopes 131 Captain America Edition (Iron Blood, True Wireless)",
+      "category": "Airdopes",
+      "price": " 899",
+      "discountPrice": "2990",
+      "discount": "69"
+    },
+    {
+      "id": "16",
+      "image": "/airpod6.webp",
+      "title": "boAt Airdopes 311 Pro (Active Black, True Wireless)",
+      "category": "Airdopes",
+      "price": "1098",
+      "discountPrice": "4990",
+      "discount": "77"
+    },
+    {
+      "id": "17",
+      "image": "/airpod7.webp",
+      "title": "boAt Airdopes 161 Pro-Buds (Green Cyan, True Wireless)",
+      "category": "Airdopes",
+      "price": "1199",
+      "discountPrice": "4490",
+      "discount": "73"
+    },
+    {
+      "id": "18",
+      "image": "/airpod8.webp",
+      "title": "boAt Airdopes 161 (Olive Green, True Wireless)",
+      "category": "Airdopes",
+      "price": " 1,099",
+      "discountPrice": " 2,490",
+      "discount": "55"
+    },
+    {
+      "id": "19",
+      "image": "/airpod9.webp",
+      "title": "boAt Airdopes 161 ANC (Black, True Wireless)",
+      "category": "Airdopes",
+      "price": " 1,399",
+      "discountPrice": " 6,999",
+      "discount": "80"
+    },
+    {
+      "id": "20",
+      "image": "/airpod10.webp",
+      "title": "boAt Airdopes Supreme (Swidish White, True Wireless)",
+      "category": "Airdopes",
+      "price": " 1,299",
+      "discountPrice": " 5,990",
+      "discount": "78"
+    },
+    {
+      "id": "21",
+      "image": "/TV1.webp",
+      "title": "Mi by Xiaomi A Series 80 cm (32 inch) HD Ready LED",
+      "category": "TV",
+      "price": " 13,990",
+      "discountPrice": " 24,999",
+      "discount": "44"
+    },
+    {
+      "id": "22",
+      "image": "/TV2.webp",
+      "title": "SAMSUNG 80 cm (32 Inch) HD Ready LED Smart Tizen TV",
+      "category": "TV",
+      "price": " 15,240",
+      "discountPrice": " 18,900",
+      "discount": "19"
+    },
+    {
+      "id": "23",
+      "image": "/TV3.webp",
+      "title": "Mi by Xiaomi X Series 138 cm (55 inch) Ultra HD (4K) LED",
+      "category": "TV",
+      "price": " 31,999",
+      "discountPrice": " 54,999",
+      "discount": "41"
+    },
+    {
+      "id": "24",
+      "image": "/TV4.webp",
+      "title": "SAMSUNG New D Series Brighter Crystal 4K Vision Pro (2024 Edition)",
+      "category": "TV",
+      "price": " 31,990",
+      "discountPrice": " 46,900",
+      "discount": "31"
+    },
+    {
+      "id": "25",
+      "image": "/TV5.webp",
+      "title": "Mi by Xiaomi X Series 125 cm (50 inch) Ultra HD (4K)",
+      "category": "TV",
+      "price": " 33,990",
+      "discountPrice": " 49,999",
+      "discount": "32"
+    },
+    {
+      "id": "26",
+      "image": "/TV6.webp",
+      "title": "SAMSUNG Crystal Vision 4K iSmart with Voice Assistant 108 cm (43 inch) Ultra HD (4K)",
+      "category": "TV",
+      "price": " 32,990",
+      "discountPrice": " 54,990",
+      "discount": "39"
+    },
+    {
+      "id": "27",
+      "image": "/TV7.webp",
+      "title": "Mi by Xiaomi X Pro QLED 108 cm (43 inch) QLED Ultra HD (4K)",
+      "category": "TV",
+      "price": " 34,990",
+      "discountPrice": " 50,999",
+      "discount": "31"
+    },
+    {
+      "id": "28",
+      "image": "/TV8.webp",
+      "title": "SONY Bravia X74L 138.8 cm (55 inch) Ultra HD (4K)",
+      "category": "TV",
+      "price": " 54,990",
+      "discountPrice": " 99,000",
+      "discount": "44"
+    },
+    {
+      "id": "29",
+      "image": "/TV9.webp",
+      "title": "Mi by Xiaomi A series 80 cm (32 inch)",
+      "category": "TV",
+      "price": " 11,999",
+      "discountPrice": " 24,999",
+      "discount": "52"
+    },
+    {
+      "id": "30",
+      "image": "/TV10.webp",
+      "title": "SAMSUNG Neo QLED 214 cm (85 inch) QLED Ultra HD (4K) Smart Tizen TV",
+      "category": "TV",
+      "price": " 4,99,990",
+      "discountPrice": " 7,99,990",
+      "discount": "37"
+    },
+    {
+      "id": "31",
+      "image": "/Watch1.webp",
+      "title": "Noise Crew Go Smartwatch (Silver Link Strap, Regular)",
+      "category": "Watches",
+      "price": " 1,699",
+      "discountPrice": " 4,999",
+      "discount": "66"
+    },
+    {
+      "id": "32",
+      "image": "/Watch2.webp",
+      "title": "SAMSUNG Galaxy Watch FE, 40mm BT, Sapphire Crystal Display, Sleep Coach, Fall Detection (Black Strap, Small)",
+      "category": "Watches",
+      "price": " 10,999",
+      "discountPrice": " 20,999",
+      "discount": "63"
+    },
+    {
+      "id": "33",
+      "image": "/Watch3.webp",
+      "title": "Noise Evolve 3 1.43 AMOLED Always-On Display with Bluetooth Calling, Metallic Design Smartwatch (Elite Black Strap, Regular)",
+      "category": "Watches",
+      "price": " 2,999",
+      "discountPrice": " 8,999",
+      "discount": "66"
+    },
+    {
+      "id": "34",
+      "image": "/Watch4.webp",
+      "title": "Noise Grace Women's Collection 1.1 AMOLED Display with Diamond Cut Metal Dial Smartwatch  (Silver Strap, Regular)",
+      "category": "Watches",
+      "price": " 3,499",
+      "discountPrice": " 5,999",
+      "discount": "41"
+    },
+    {
+      "id": "35",
+      "image": "/Watch5.webp",
+      "title": "Noise Halo 2 1.43 AMOLED, Rotating Axe-Cut Bezel, Stainless Steel Build, BT Calling Smartwatch (Vintage Brown Strap, Regular)",
+      "category": "Watches",
+      "price": " 4,499",
+      "discountPrice": " 6,999",
+      "discount": "35"
+    },
+    {
+      "id": "36",
+      "image": "/Watch6.webp",
+      "title": "SAMSUNG Galaxy Watch6 LTE  (Graphite Strap, 44mm)",
+      "category": "Watches",
+      "price": " 22,999",
+      "discountPrice": " 41,999",
+      "discount": "45"
+    },
+    {
+      "id": "37",
+      "image": "/Watch7.webp",
+      "title": "Noise Pro 5 1.85 AMOLED Always-on Display, DIY Watch face, SoS Technology, BT Calling Smartwatch (Rose Gold Strap, Regular)",
+      "category": "Watches",
+      "price": " 4,099",
+      "discountPrice": " 9,999",
+      "discount": "59"
+    },
+    {
+      "id": "38",
+      "image": "/Watch8.webp",
+      "title": "boAt Enigma Orion Luxury Series w/ 3.53cm HD Display, BT Calling & Functional Crown Smartwatch (Metallic Silver Strap, Free Size)",
+      "category": "Watches",
+      "price": " 2,699",
+      "discountPrice": " 8,999",
+      "discount": "70"
+    },
+    {
+      "id": "39",
+      "image": "/Watch9.webp",
+      "title": "boAt Enigma Radiant Luxury Series w/ 3.63cm AMOLED Screen,BT Calling,Functional Crown Smartwatch (Metal Black Strap, Free Size)",
+      "category": "Watches",
+      "price": " 3,299",
+      "discountPrice": " 9,499",
+      "discount": "65"
+    },
+    {
+      "id": "40",
+      "image": "/Watch10.webp",
+      "title": "SAMSUNG Galaxy Watch6 Classic LTE  (Silver Strap, 47mm)",
+      "category": "Watches",
+      "price": " 39,999",
+      "discountPrice": " 50,999",
+      "discount": "21"
+    },
+    {
+      "id": "41",
+      "image": "/Laptop1.webp",
+      "title": "ASUS TUF Gaming F15 Intel Core i5 12th Gen 12500H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050) FX507ZC4-HN116W Gaming Laptop  (15.6 Inch, Mecha Gray, 2.20 Kg)",
+      "category": "Laptop",
+      "price": " 64,990",
+      "discountPrice": " 87,990",
+      "discount": "26"
+    },
+    {
+      "id": "42",
+      "image": "/Laptop2.webp",
+      "title": "ASUS Vivobook S 15 OLED Powered, Intel EVO H Series, AI PC Intel Core Ultra 5 125H - (16 GB/1 TB SSD/Windows 11 Home) S5506MA-MA552WS Thin and Light Laptop  (15.6 Inch, Neutral Black, 1.50 kg, With MS Office)",
+      "category": "Laptop",
+      "price": " 91,990",
+      "discountPrice": " 1,06,990",
+      "discount": "14"
+    },
+    {
+      "id": "43",
+      "image": "/Laptop3.webp",
+      "title": "HP Envy x360 Intel Core i5 13th Gen 1335U - (16 GB/512 GB SSD/Windows 11 Home) 15-fe0027TU Laptop  (15.6 Inch, Nightfall Black, 2.14 Kg, With MS Office)",
+      "category": "Laptop",
+      "price": " 74,999",
+      "discountPrice": " 1,08,141",
+      "discount": "30"
+    },
+    {
+      "id": "44",
+      "image": "/Laptop4.webp",
+      "title": "HP Omen AMD Ryzen 7 Octa Core 7840HS - (16 GB/1 TB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 4050) 16-xd0015AX Gaming Laptop  (16.1 Inch, Shadow Black, 2.37 Kg)",
+      "category": "Laptop",
+      "price": " 1,02,990",
+      "discountPrice": " 1,23,562",
+      "discount": "16"
+    },
+    {
+      "id": "45",
+      "image": "/Laptop5.webp",
+      "title": "ASUS TUF Gaming F15, 90WHrs Battery Intel Core i7 13th Gen 13620H - (16 GB/512 GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 4050/140 W) FX507VU-LP210W Gaming Laptop  (15.6 Inch, Mecha Gray, 2.2 Kg)",
+      "category": "Laptop",
+      "price": " 94,990",
+      "discountPrice": " 1,21,990",
+      "discount": "22"
+    },
+    {
+      "id": "46",
+      "image": "/Laptop6.webp",
+      "title": "DELL Intel Core i5 13th Gen 13450HX - (16 GB/1 TB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3050) GN5530N7HY001ORB1O Gaming Laptop  (15.6 inch, Dark Shadow Gray, With MS Office)",
+      "category": "Laptop",
+      "price": " 75,990",
+      "discountPrice": " 1,05,398",
+      "discount": "27"
+    },
+    {
+      "id": "47",
+      "image": "/Laptop7.webp",
+      "title": "HP Victus Intel Core i7 12th Gen 12650H - (16 GB/1 TB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050A) 15-fa1389TX Gaming Laptop  (15.6 Inch, Performance Blue, 2.29 Kg)",
+      "category": "Laptop",
+      "price": " 81,990",
+      "discountPrice": " 95,746",
+      "discount": "14"
+    },
+    {
+      "id": "48",
+      "image": "/Laptop8.webp",
+      "title": "ASUS ROG Strix G16, 90WHrs Battery Intel Core i7 13th Gen 13650HX - (16 GB/1 TB SSD/Windows 11 Home/8 GB Graphics/NVIDIA GeForce RTX 4070/140 W) G614JI-BG711WS Gaming Laptop  (16 Inch, Eclipse Gray, 2.5 Kg)",
+      "category": "Laptop",
+      "price": " 1,49,990",
+      "discountPrice": " 1,91,990",
+      "discount": "21"
+    },
+    {
+      "id": "49",
+      "image": "/Laptop9.webp",
+      "title": "HP Victus AI Powered AMD Ryzen 7 Octa Core 7840HS - (16 GB/512 GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3050) 16-s0095AX Gaming Laptop  (16.1 Inch, Performance Blue, 2.29 kg, With MS Office)",
+      "category": "Laptop",
+      "price": " 78,990",
+      "discountPrice": " 96,136",
+      "discount": "17"
+    },
+    {
+      "id": "50",
+      "image": "/Laptop10.webp",
+      "title": "ASUS Vivobook S 15 OLED Powered, Intel EVO H Series, AI PC Intel Core Ultra 7 155H - (16 GB/1 TB SSD/Windows 11 Home) S5506MA-MA751WS Thin and Light Laptop  (15.6 Inch, Mist Blue, 1.50 kg, With MS Office)",
+      "category": "Laptop",
+      "price": " 1,06,990",
+      "discountPrice": " 1,22,990",
+      "discount": "13"
+    }
+  ]
+}
