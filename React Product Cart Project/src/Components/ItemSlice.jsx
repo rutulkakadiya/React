@@ -24,16 +24,43 @@ export const updateProduct = createAsyncThunk("DataSlice/updateProduct", async (
     const response = await axios.put(`http://localhost:5000/Data/${id}`, product);
     return response.data;
 
-})
+});
+
 
 
 export const DataSlice = createSlice({
     name: "DataSlice",
     initialState: {
         allData: [],
+        sortData: [],
+        sortOption: "category",
         loading: true,
     },
-    reducers: {},
+    reducers: {
+        sortProduct: (state, action) => {
+            const { option, productData } = action.payload;
+            let sortedArray = [...productData];
+
+            switch (option) {
+                case 'atoz':
+                    sortedArray.sort((a, b) => a.title.localeCompare(b.title));
+                    break;
+                case 'ztoa':
+                    sortedArray.sort((a, b) => b.title.localeCompare(a.title));
+                    break;
+                case 'lowToHigh':
+                    sortedArray.sort((a, b) => a.price - b.price)
+                    break;
+
+                case 'highToLow':
+                    sortedArray.sort((a, b) => b.price - a.price)
+                    break;
+            }
+            state.sortData = sortedArray;
+            state.sortOption = option;
+
+        }
+    },
 
     extraReducers: (builder) => {
         builder
@@ -54,7 +81,7 @@ export const DataSlice = createSlice({
             })
             .addCase(updateProduct.fulfilled, (state, action) => {
 
-                state.allData = state.allData.map((item)=> item.id == action.payload.editIndex ? action.payload : item)
+                state.allData = state.allData.map((item) => item.id == action.payload.editIndex ? action.payload : item)
 
             })
 
@@ -62,4 +89,5 @@ export const DataSlice = createSlice({
 
 })
 
+export const { sortProduct } = DataSlice.actions;
 export default DataSlice.reducer;

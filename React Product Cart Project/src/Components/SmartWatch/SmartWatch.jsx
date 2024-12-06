@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { MdDelete } from "react-icons/md";
-import { FetchApi, addProduct, deleteProduct, sortProduct, updateProduct } from './Components/ItemSlice';
+import { FetchApi, addProduct, deleteProduct, sortProduct, updateProduct } from '../../Components/ItemSlice';
 import { FaEdit } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import Nav from './Nav';
+import Nav from '../../Nav';
 import { Link } from 'react-router-dom';
 
-export default function Home() {
+export default function Laptop() {
 
     const dispatch = useDispatch();
     useEffect(() => {
@@ -101,8 +101,8 @@ export default function Home() {
     console.log(search);
 
     const displayProducts = sortOption != "category" ? sortData : allData;
-    const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes((search.toLowerCase()))
-    );
+    const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes((search.toLowerCase())));
+    const smartWatchProducts = searchProducts.filter((item)=> item.category == "Watches");
 
     return (
         <div className='bg-[#f1f2f4]'>
@@ -204,14 +204,14 @@ export default function Home() {
 
             <div className="mainDiv flex gap-[30px] ms-[2.5%] flex-wrap ">
                 {allData &&
-                    searchProducts.length > 0 ?
-                    searchProducts.map((e, i) => {
+                    smartWatchProducts.length > 0 ?
+                    smartWatchProducts.map((e, i) => {
                         return (
                             <div key={i} className="itemDiv w-[23%] mt-[30px] rounded-[10px] bg-[white] pt-[30px] pb-[30px] border relative transition-transform transform hover:scale-105 hover:shadow-xl">
                                 <center>
                                     <MdDelete onClick={() => handleDelete(e.id)} className='absolute right-2 top-2 cursor-pointer text-red-600 text-2xl' />
                                     <FaEdit onClick={() => handleEdit(e.id)} className='absolute right-2 top-[50px] cursor-pointer text-green-800 text-2xl' />
-                                    <img className='h-[30vh]' src={e.image} alt="" />
+                                    <img className='h-[25vh] px-[30px]' src={e.image} alt="" />
                                 </center>
                                 <div className="txt px-3 mt-3">
                                     <p>{e.title}</p>

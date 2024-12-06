@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { MdDelete } from "react-icons/md";
-import { FetchApi, addProduct, deleteProduct, sortProduct, updateProduct } from './Components/ItemSlice';
+import { FetchApi, addProduct, deleteProduct, sortProduct, updateProduct } from '../../Components/ItemSlice';
 import { FaEdit } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import Nav from './Nav';
+import Nav from '../../Nav';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -101,9 +101,9 @@ export default function Home() {
     console.log(search);
 
     const displayProducts = sortOption != "category" ? sortData : allData;
-    const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes((search.toLowerCase()))
-    );
-
+    const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes((search.toLowerCase())));
+    const mobileProducts = searchProducts.filter((item)=> item.category == "Mobiles");
+    
     return (
         <div className='bg-[#f1f2f4]'>
             <Nav search={search} setSearch={setSearch} />
@@ -204,8 +204,8 @@ export default function Home() {
 
             <div className="mainDiv flex gap-[30px] ms-[2.5%] flex-wrap ">
                 {allData &&
-                    searchProducts.length > 0 ?
-                    searchProducts.map((e, i) => {
+                    mobileProducts.length > 0 ?
+                    mobileProducts.map((e, i) => {
                         return (
                             <div key={i} className="itemDiv w-[23%] mt-[30px] rounded-[10px] bg-[white] pt-[30px] pb-[30px] border relative transition-transform transform hover:scale-105 hover:shadow-xl">
                                 <center>
