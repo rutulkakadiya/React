@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { MdDelete } from "react-icons/md";
+import { MdDeleteOutline } from "react-icons/md";
 import { FetchApi, addProduct, deleteProduct, sortProduct, updateProduct } from '../../Components/ItemSlice';
-import { FaEdit } from "react-icons/fa";
+import { FiEdit } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import Nav from '../../Nav';
 import { Link } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export default function Laptop() {
+export default function Home() {
 
     const dispatch = useDispatch();
     useEffect(() => {
@@ -49,17 +51,25 @@ export default function Laptop() {
             setEditIndex(null);
         }
         else {
-            const newProduct = { image, title, price, category, discountPrice, discount };
+            if (image || title || price || category || discountPrice || discount !== "") {
+                const newProduct = { image, title, price, category, discountPrice, discount };
 
-            dispatch(addProduct(newProduct));
-            setIsVisibleAddDataDiv(false);
+                dispatch(addProduct(newProduct));
+                setIsVisibleAddDataDiv(false);
 
-            setImage(null);
-            setTitle("");
-            setPrice("");
-            setCategory("");
-            setDiscountPrice("");
-            setDiscount("");
+                setImage(null);
+                setTitle("");
+                setPrice("");
+                setCategory("");
+                setDiscountPrice("");
+                setDiscount("");
+
+                toast.success("Product Added Successfully...");
+            }
+            else {
+                toast.error("Fill all details...");
+            }
+
         };
     };
 
@@ -72,7 +82,7 @@ export default function Laptop() {
     };
 
     const handleEdit = (id) => {
-        const editData = record.allData.find((item) => item.id === id);
+        const editData = allData.find((item) => item.id === id);
 
         if (editData) {
             const replacePrice = editData.price ? Number(editData.price) : "";
@@ -102,19 +112,21 @@ export default function Laptop() {
 
     const displayProducts = sortOption != "category" ? sortData : allData;
     const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes((search.toLowerCase())));
-    const laptopProducts = searchProducts.filter((item)=> item.category == "Laptop");
+    const laptopProducts = searchProducts.filter((item)=> item.category === "Laptop")
+
 
     return (
-        <div className='bg-[#f1f2f4]'>
+        <div>
+            <ToastContainer />
             <Nav search={search} setSearch={setSearch} />
 
-            <div className="category flex justify-center items-center pt-3 pb-3 mt-3 w-0-[100%] bg-white">
+            <div className="category flex justify-center items-center pt-3 pb-3 mt-[50px] rounded-[10px] w-[95%] ms-[2.5%] bg-white" style={{ boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.3)" }}>
                 <div className="div flex justify-around gap-[50px]">
                     <div className="category1 flex justify-center">
                         <Link to={'/'}>
                             <div className="item cursor-pointer">
                                 <center>
-                                    <img className='h-[10vh]' src="/all_category.png" alt="" />
+                                    <img className='h-[10vh] transition-all transform hover:scale-110' src="/all_category.png" alt="" />
                                     <p>All Product</p>
                                 </center>
                             </div>
@@ -124,7 +136,7 @@ export default function Laptop() {
                         <Link to={'/mobile'}>
                             <div className="item cursor-pointer">
                                 <center>
-                                    <img className='h-[10vh]' src="/mobile_category.jpg" alt="" />
+                                    <img className='h-[10vh] transition-all transform hover:scale-110' src="/mobile_category.jpg" alt="" />
                                     <p>Mobiles</p>
                                 </center>
                             </div>
@@ -134,7 +146,7 @@ export default function Laptop() {
                         <Link to={'/tv'}>
                             <div className="item cursor-pointer">
                                 <center>
-                                    <img className='h-[10vh]' src="/tv_category.webp" alt="" />
+                                    <img className='h-[10vh] transition-all transform hover:scale-110' src="/tv_category.webp" alt="" />
                                     <p>TV & appliances</p>
                                 </center>
                             </div>
@@ -144,7 +156,7 @@ export default function Laptop() {
                         <Link to={'/laptops'}>
                             <div className="item cursor-pointer">
                                 <center>
-                                    <img className='h-[10vh]' src="/laptop_category.png" alt="" />
+                                    <img className='h-[10vh] transition-all transform hover:scale-110' src="/laptop_category.png" alt="" />
                                     <p>Laptops</p>
                                 </center>
                             </div>
@@ -154,7 +166,7 @@ export default function Laptop() {
                         <Link to={'/smartwatches'}>
                             <div className="item cursor-pointer">
                                 <center>
-                                    <img className='h-[10vh]' src="/watch_category.png" alt="" />
+                                    <img className='h-[10vh] transition-all transform hover:scale-110' src="/watch_category.png" alt="" />
                                     <p>Smart Watches</p>
                                 </center>
                             </div>
@@ -164,7 +176,7 @@ export default function Laptop() {
                         <Link to={'/airpods'}>
                             <div className="item cursor-pointer">
                                 <center>
-                                    <img className='h-[10vh]' src="/airpod_category.png" alt="" />
+                                    <img className='h-[10vh] transition-all transform hover:scale-110' src="/airpod_category.png" alt="" />
                                     <p>Airpods & Earbuds</p>
                                 </center>
                             </div>
@@ -184,7 +196,7 @@ export default function Laptop() {
 
 
             <div className="sorting flex justify-end w-[98%] ms-[1%]">
-                <div className='flex items-center bg-white border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-48 p-2.5 hover:shadow-lg transition-shadow duration-300'>
+                <div className='flex items-center bg-white border me-[1%] border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-48 py-3 ps-2 hover:shadow-lg transition-shadow duration-300'>
                     <p>Sort By:</p>
                     <select
                         name=""
@@ -202,25 +214,62 @@ export default function Laptop() {
 
             </div>
 
-            <div className="mainDiv flex gap-[30px] ms-[2.5%] flex-wrap ">
+            <div className="mainDiv flex gap-[30px] ms-[2.5%] flex-wrap">
                 {allData &&
                     laptopProducts.length > 0 ?
                     laptopProducts.map((e, i) => {
                         return (
-                            <div key={i} className="itemDiv w-[23%] mt-[30px] rounded-[10px] bg-[white] pt-[30px] pb-[30px] border relative transition-transform transform hover:scale-105 hover:shadow-xl">
-                                <center>
-                                    <MdDelete onClick={() => handleDelete(e.id)} className='absolute right-2 top-2 cursor-pointer text-red-600 text-2xl' />
-                                    <FaEdit onClick={() => handleEdit(e.id)} className='absolute right-2 top-[50px] cursor-pointer text-green-800 text-2xl' />
-                                    <img className='h-[25vh] px-[30px]' src={e.image} alt="" />
-                                </center>
-                                <div className="txt px-3 mt-3">
-                                    <p>{e.title}</p>
-                                    <p className='text-[#768196] text-[14px]'>{e.category}</p>
-                                    <p className='text-[26px] font-semibold mt-2'> ₹{Number(e.price).toLocaleString('en-IN')} <del className='text-[18px] font-normal text-[#4d5564]'>₹{Number(e.discountPrice).toLocaleString('en-IN')}</del>
-                                    </p>
-                                    <p className='text-[#2f9235] font-semibold'>{e.discount}% off</p>
+                            <div
+                                key={i}
+                                className="itemDiv p-3 h-auto w-[23%] mt-[30px] rounded-[5px] bg-white shadow-sm relative overflow-hidden"
+                            >
+                                <div className="rounded-[10px]">
+                                    <div className="relative">
+                                        <center>
+                                            <img
+                                                className="h-[25vh] px-3"
+                                                src={e.image}
+                                                alt="" />
+                                        </center>
+
+                                    </div>
+                                    <div className="text-left mt-4 relative h-[25vh]">
+                                        <h3 className="text-lg font-semibold text-gray-800">{e.title}</h3>
+                                        <p className="text-sm text-gray-500 mt-1">{e.category}</p>
+
+                                        <div className="div absolute top-[15vh]">
+                                            <div className="mt-2]">
+                                                <span className="text-xl font-bold text-gray-900">
+                                                    ₹{Number(e.price).toLocaleString('en-IN')}
+                                                </span>
+                                                <del className="text-sm font-normal text-gray-400 ml-2">
+                                                    ₹{Number(e.discountPrice).toLocaleString('en-IN')}
+                                                </del>
+                                            </div>
+                                            <p className="text-sm text-green-600 font-medium mt-1">
+                                                {e.discount}% off
+                                            </p>
+                                        </div>
+
+                                        <div className="customDiv">
+                                            <div className="editIcon">
+                                                <FiEdit
+                                                    onClick={() => handleEdit(e.id)}
+                                                    className="cursor-pointer"
+                                                />
+                                            </div>
+
+                                            <div className="deleteIcon">
+                                                <MdDeleteOutline
+                                                    onClick={() => handleDelete(e.id)}
+                                                    className="cursor-pointer"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         )
                     }) : (
                         <div className='h-[75vh] w-[100%] flex justify-center items-center'>
@@ -238,7 +287,7 @@ export default function Laptop() {
             </div>
 
             {isVisibleAddDataDiv && (
-                <div className="addDataDiv h-[100vh] w-[100%] flex justify-center items-center bg-[#dcdddf] fixed top-0">
+                <div className="addDataDiv h-[100vh] w-[100%] flex justify-center items-center fixed top-0 z-50">
                     <div className="addProduct w-[30%] rounded-[10px] p-5 bg-white relative">
                         <IoClose className='absolute right-3 text-2xl cursor-pointer' onClick={handleClose} />
                         <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">Add Product</h2>
