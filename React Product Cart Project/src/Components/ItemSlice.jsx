@@ -6,7 +6,6 @@ export const FetchApi = createAsyncThunk("DataSlice/FetchApi", async () => {
     return response.json();
 })
 
-
 export const addProduct = createAsyncThunk("DataSlice/addProduct", async (product) => {
 
     const response = await axios.post("http://localhost:5000/Data", product);

@@ -121,13 +121,14 @@
       "discount": "22"
     },
     {
-      "id": "11",
+      "editIndex": "11",
       "image": "/airpod1.webp",
       "title": "boAt Airdopes 161/163 (Pebble Black, Active Black, True Wireless)",
+      "price": 899,
       "category": "Airdopes",
-      "price": "899",
-      "discountPrice": "2490",
-      "discount": "63"
+      "discountPrice": 2490,
+      "discount": "63",
+      "id": "11"
     },
     {
       "id": "26",
@@ -139,13 +140,14 @@
       "discount": "39"
     },
     {
-      "id": "14",
+      "editIndex": "14",
       "image": "/airpod4.webp",
       "title": "boAt Airdopes 131 Pro Buds (Active Black, True Wireless)",
+      "price": 999,
       "category": "Airdopes",
-      "price": "999",
-      "discountPrice": "5490",
-      "discount": "81"
+      "discountPrice": 5490,
+      "discount": "81",
+      "id": "14"
     },
     {
       "id": "27",

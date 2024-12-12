@@ -19,6 +19,7 @@ export default function Home() {
     const { allData, sortData, sortOption } = useSelector((state) => state.allDataKey);
 
     const [isVisibleAddDataDiv, setIsVisibleAddDataDiv] = useState(false);
+
     const hanldeAddDataDiv = () => {
         setIsVisibleAddDataDiv(true);
     };
@@ -119,7 +120,7 @@ export default function Home() {
             <ToastContainer />
             <Nav search={search} setSearch={setSearch} />
 
-            <div className="category flex justify-center items-center pt-3 pb-3 mt-[50px] rounded-[10px] w-[95%] ms-[2.5%] w-[100%] bg-white" style={{ boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.3)" }}>
+            <div className="category flex justify-center items-center pt-3 pb-3 mt-[50px] rounded-[10px] w-[95%] ms-[2.5%] bg-white" style={{ boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.3)" }}>
                 <div className="div flex justify-around gap-[50px]">
                     <div className="category1 flex justify-center">
                         <Link to={'/'}>
@@ -213,14 +214,14 @@ export default function Home() {
 
             </div>
 
-            <div className="mainDiv flex gap-[30px] ms-[2.5%] flex-wrap">
+            <div className="mainDiv flex gap-[30px] ms-[2.5%] flex-wrap mb-[30px]">
                 {allData &&
                     searchProducts.length > 0 ?
                     searchProducts.map((e, i) => {
                         return (
                             <div
                                 key={i}
-                                className="itemDiv p-3 h-auto w-[23%] mt-[30px] rounded-[5px] bg-white shadow-sm relative overflow-hidden"
+                                className="itemDiv p-3 h-auto w-[23%] rounded-[5px] bg-white shadow-sm relative overflow-hidden"
                             >
                                 <div className="rounded-[10px]">
                                     <div className="relative">
@@ -287,58 +288,70 @@ export default function Home() {
 
             {isVisibleAddDataDiv && (
                 <div className="addDataDiv h-[100vh] w-[100%] flex justify-center items-center fixed top-0 z-50">
-                    <div className="addProduct w-[30%] rounded-[10px] p-5 bg-white relative">
-                        <IoClose className='absolute right-3 text-2xl cursor-pointer' onClick={handleClose} />
-                        <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">Add Product</h2>
 
-                        {/* Image Input */}
-                        <div className="mb-4">
-                            <label htmlFor="Image" className="block text-gray-600 font-medium mb-2">Choose Image</label>
-                            <input type="file" id="image" onChange={handleImage} className="w-full border border-gray-300 bg-white rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <div className="div flex w-[100%]">
+                        <div className="imageDiv w-[50%] flex justify-center items-center">
+                            <img className='addItem' src="/addItem.png" alt="" />
                         </div>
 
-                        {/* Product Name Input */}
-                        <div className="mb-4">
-                            <label htmlFor="title" className="block text-gray-600 font-medium mb-2">Product Name</label>
-                            <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter product name" />
+                        <div className="addProduct w-[50%] flex justify-center rounded-[10px] p-5 relative">
+
+                            <div className="inputDiv w-[80%]">
+                                <IoClose className='absolute top-0 right-3 text-3xl cursor-pointer text-white' onClick={handleClose} />
+                                <h2 className="text-2xl font-bold text-center mb-6 text-white">{editIndex ? "Edit Product" : "Add Product"}</h2>
+
+                                {/* Image Input */}
+                                <div className="mb-4">
+                                    <label htmlFor="Image" className="block text-white font-medium mb-2">Choose Image</label>
+                                    <input type="file" id="image" onChange={handleImage} className="w-full border border-gray-300 bg-white rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                </div>
+
+                                {/* Product Name Input */}
+                                <div className="mb-4">
+                                    <label htmlFor="title" className="block text-white font-medium mb-2">Product Name</label>
+                                    <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter product name" />
+                                </div>
+
+
+                                {/* Category Input */}
+                                <div className="mb-4">
+                                    <label htmlFor="category" className="block text-white font-medium mb-2">Category</label>
+                                    <input type="text" id="category" value={category} onChange={(e) => setCategory(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter category" />
+                                </div>
+                                {/* Discount Price Input */}
+                                <div className="mb-4">
+                                    <label htmlFor="price" className="block text-white font-medium mb-2">Discount Price</label>
+                                    <input
+                                        type="text"
+                                        id="price"
+                                        value={price}
+                                        onChange={(e) => setPrice(e.target.value)}
+                                        className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Enter price with discount"
+                                    />
+                                </div>
+
+                                {/* Discount Price Input */}
+                                <div className="mb-4">
+                                    <label htmlFor="discountPrice" className="block text-white font-medium mb-2">Original Price</label>
+                                    <input type="text" id="discountPrice" value={discountPrice} onChange={(e) => setDiscountPrice(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter original price" />
+                                </div>
+
+
+                                {/* Discount Input */}
+                                <div className="mb-4">
+                                    <label htmlFor="discount" className="block text-white font-medium mb-2">Discount (%)</label>
+                                    <input type="text" id="discount" value={discount} onChange={(e) => setDiscount(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter discount" />
+                                </div>
+
+
+                                <button onClick={handleAddProduct} className="w-full bg-[#399043] text-white py-2 rounded-md font-medium">
+                                    {editIndex !== null ? "Edit Product" : "Add Product"}
+                                </button>
+                            </div>
+
+
                         </div>
-
-
-                        {/* Category Input */}
-                        <div className="mb-4">
-                            <label htmlFor="category" className="block text-gray-600 font-medium mb-2">Category</label>
-                            <input type="text" id="category" value={category} onChange={(e) => setCategory(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter category" />
-                        </div>
-                        {/* Discount Price Input */}
-                        <div className="mb-4">
-                            <label htmlFor="price" className="block text-gray-600 font-medium mb-2">Discount Price</label>
-                            <input
-                                type="text"
-                                id="price"
-                                value={price}
-                                onChange={(e) => setPrice(e.target.value)}
-                                className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                placeholder="Enter price with discount"
-                            />
-                        </div>
-
-                        {/* Discount Price Input */}
-                        <div className="mb-4">
-                            <label htmlFor="discountPrice" className="block text-gray-600 font-medium mb-2">Original Price</label>
-                            <input type="text" id="discountPrice" value={discountPrice} onChange={(e) => setDiscountPrice(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter original price" />
-                        </div>
-
-
-                        {/* Discount Input */}
-                        <div className="mb-4">
-                            <label htmlFor="discount" className="block text-gray-600 font-medium mb-2">Discount (%)</label>
-                            <input type="text" id="discount" value={discount} onChange={(e) => setDiscount(e.target.value)} className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter discount" />
-                        </div>
-
-
-                        <button onClick={handleAddProduct} className="w-full bg-blue-500 text-white py-2 rounded-md font-medium hover:bg-blue-600 transition duration-200">
-                            {editIndex !== null ? "Edit Product" : "Add Product"}
-                        </button>
                     </div>
                 </div>
             )}
