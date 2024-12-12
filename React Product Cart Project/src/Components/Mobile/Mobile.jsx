@@ -213,7 +213,7 @@ export default function Home() {
                 </div>
 
             </div>
-
+            <br />
             <div className="mainDiv flex gap-[30px] ms-[2.5%] flex-wrap mb-[30px]">
                 {allData &&
                     mobileProducts.length > 0 ?
