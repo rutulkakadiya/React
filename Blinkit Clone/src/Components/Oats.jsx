@@ -39,7 +39,7 @@ export default function Oats() {
 
                     <div className="div2 w-[80%] h-[81vh] overflow-scroll">
                         <div className="sort flex justify-between mt-3">
-                            <p className='ps-3 font-semibold'>Buy Milk Online</p>
+                            <p className='ps-3 font-semibold'>Buy Oats Online</p>
 
                             <div className="sorting flex gap-[10px] items-center me-[30px]">
                                 <p>Sort By</p>
