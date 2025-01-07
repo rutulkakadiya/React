@@ -20,6 +20,14 @@ export default function LocalStorage() {
     let objData1 = JSON.parse(localStorage.getItem("MyObj1"))
 
 
+    let object = {age : "18" , blood_group : "A+"}
+
+    localStorage.setItem("Data" , JSON.stringify(object))
+
+    let data1 = JSON.parse(localStorage.getItem("Data"))
+    console.log(data1);
+    
+
     console.log(objData)            
     return (
         <div>

@@ -21,7 +21,7 @@ export default function SignUp() {
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then(data => {
-        setDoc(doc(db, "users", data.user.uid), { name, email, city, hobby });
+        setDoc(doc(db, "users", data.user.uid), { name, email, city, hobby });                                              
       });
     navigate("/dashboard");
   };

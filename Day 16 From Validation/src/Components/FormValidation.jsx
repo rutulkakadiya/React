@@ -90,8 +90,8 @@ export default function FormValidation() {
                         category == "manufacturer" && <input type="text" value={categoryData} onChange={(e) => setCategoryData(e.target.value)} className='input1' placeholder="Enter manufacturer details" />
                     }
 
-                    <p className='passErr' style={{ color: upperCaseColor, marginTop: "10px" }}>*Use at least one Lowercase alphabet for password</p>
-                    <p className='passErr' style={{ color: lowerCaseColor }}>*Use at least one Uppercase alphabet for password</p>
+                    <p className='passErr' style={{ color: lowerCaseColor, marginTop: "10px" }}>*Use at least one Lowercase alphabet for password</p>
+                    <p className='passErr' style={{ color: upperCaseColor }}>*Use at least one Uppercase alphabet for password</p>
                     <p className='passErr' style={{ color: specialCaseColor, marginBottom: "10px" }}>*Use at least one Special alphabet for password</p>
                     <input type="submit" className='btn' />
                 </center>

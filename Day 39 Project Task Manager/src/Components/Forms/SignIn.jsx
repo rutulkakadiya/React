@@ -5,7 +5,6 @@ import { auth, database } from '/firebaseConfig'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import { doc, getDoc } from 'firebase/firestore';
 
 
 export default function SignUp() {

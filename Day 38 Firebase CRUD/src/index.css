@@ -1,0 +1,14 @@
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.CRUD{
+    height: 50vh;
+    width: 50%;
+    border: 1px solid black;
+    margin-top: 10%;
+}

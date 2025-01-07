@@ -269,15 +269,6 @@
       "discount": "31"
     },
     {
-      "id": "41",
-      "image": "/Laptop1.webp",
-      "title": "ASUS TUF Gaming F15 Intel Core i5 Gaming Laptop (15.6 Inch, Mecha Gray)",
-      "category": "Laptop",
-      "price": "64990",
-      "discountPrice": "87990",
-      "discount": "26"
-    },
-    {
       "id": "31",
       "image": "/Watch1.webp",
       "title": "Noise Crew Go Smartwatch (Silver Link Strap, Regular)",

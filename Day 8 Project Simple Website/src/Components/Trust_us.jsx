@@ -5,7 +5,7 @@ export default function Trust_us() {
         <div className='bg-[#f9eae3] mt-5'>
 
             <br />
-            <p className='text1 text-center text-3xl text-black'>Why Trust Us?</p>
+            <p className='text1 text-center text-3xl mt-3 sm:text-5xl text-black' data-aos="fade-up" data-aos-duration="2000">Why Trust Us?</p>
 
             <div className="trust_div w-[80%] ms-[10%] flex justify-between flex-wrap mt-[50px]">
                 <div className="divs flex justify-center items-center flex-wrap h-[150px] w-[95%] sm:w-[30%] md:w-[30%] lg:w-[15%] rounded-[15px] mb-[50px]">

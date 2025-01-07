@@ -3,6 +3,7 @@ import { setDoc, doc } from 'firebase/firestore';
 import { db, auth, googleProvider } from '../../firebaseConfig';
 import { signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import { FaGoogle } from "react-icons/fa";
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -27,7 +28,7 @@ export default function SignIn() {
     await setDoc(doc(db, 'users', user.email), {
       email: user.email,
       displayName: user.displayName,
-    });
+    });   
 
     alert(`Welcome, ${user.displayName}!`);
     navigate('/dashboard');
@@ -51,8 +52,9 @@ export default function SignIn() {
       <button className="signin-button" onClick={handleSignIn}>
         Sign In
       </button>
-      <p className="google-signin" onClick={handleGoogleSignIn}>
-        Sign In with Google
+      <p className="google-signin" style={{display: "flex", alignItems: "center"}} onClick={handleGoogleSignIn}>
+      <FaGoogle/>        
+        <p style={{marginLeft: "5px"}}>Sign In with Google</p>
       </p>
     </div>
   );

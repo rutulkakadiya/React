@@ -7,7 +7,7 @@ export default function Delete({ data, setData }) {
   const navigate = useNavigate();
   
   const handleDelete = () => {
-    let deleteItem = data.filter((item) => item.id !== id);
+    let deleteItem = data.filter((item) => item.id !== Number(id));
 
     setData(deleteItem);
     navigate("/");

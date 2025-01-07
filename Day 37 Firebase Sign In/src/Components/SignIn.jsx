@@ -11,7 +11,7 @@ export default function SignIn() {
 
   const handleSubmit = () => {
     signInWithEmailAndPassword(auth, email, password)
-      .then(users => {
+      .then(() => {
         navigate("/dashboard");
       })
 
@@ -40,7 +40,7 @@ export default function SignIn() {
       <button onClick={handleSubmit} className="signin-button">
         Login
       </button>
-      
+
       <p>Don`t have an account</p>
       <p onClick={handleSignUp} className="signin-link">Sign Up?</p>
     </div>

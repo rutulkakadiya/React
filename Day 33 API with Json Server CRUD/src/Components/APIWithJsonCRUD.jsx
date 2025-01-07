@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 export default function APIWithJsonCRUD() {
-
+    
     useEffect(() => {
         fetchAPI();
     }, []);
@@ -20,6 +20,7 @@ export default function APIWithJsonCRUD() {
 
     const handleImage = (e) => {
         const imageUrl = URL.createObjectURL(e.target.files[0]);
+        console.log(imageUrl);  
         setImage(imageUrl);
     };
 

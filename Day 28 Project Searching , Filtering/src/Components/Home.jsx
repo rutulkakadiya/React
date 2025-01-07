@@ -27,7 +27,7 @@ export default function Home() {
         { brand: "vivo", description: "Vivo X80 Pro (Gangus Blue, 128 GB)", image: "/public/x80-pro-v2145-vivo-original-imah3r48qf7ctnpj.webp" , price : "₹35,999/-", deletePrice : "40,999/-"  },
     ];
 
-    const data = arr.filter((item) => item.description.includes(description));
+    const data = arr.filter((item) => item.description.toLowerCase().includes(description.toLowerCase()));
 
     return (
         <div className="container mx-auto px-4 py-6">

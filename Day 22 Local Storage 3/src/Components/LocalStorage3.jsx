@@ -10,7 +10,6 @@ export default function LocalStorage() {
 
     useEffect(() => {
         const saveData = JSON.parse(localStorage.getItem("UserData")) || [];
-
         setRecord(saveData)
     }, []);
 

@@ -1,9 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+  
 * {
-    font-family: "Hanken Grotesk", sans-serif;}
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container::-webkit-scrollbar {
+    display: none; 
+}
+
+.cart::-webkit-scrollbar {
+    display: none; 
+}
 
 .login_page{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
@@ -110,6 +119,16 @@
     transform: scale(1.1);
 }
 
+
+.err{
+    color: red;
+    margin-left: 10%;
+}
+
+.passErr{
+    color: red;
+}
+
 .founder_div{
     height: auto;
     width: 100%;
@@ -124,3 +143,4 @@
     background-size: cover;
     background-position: center;
 }
+

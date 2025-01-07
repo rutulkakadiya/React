@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios"; // Axios को इम्पोर्ट करना
+import axios from "axios"; 
 
 export const fetchApi = createAsyncThunk("fetchApi", async () => {
   let response = await axios.get("https://fakestoreapi.com/products");

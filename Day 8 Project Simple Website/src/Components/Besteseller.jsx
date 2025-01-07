@@ -87,11 +87,10 @@ export default function Besteseller() {
         ));
     };
 
-
     return (
         <div>
 
-            <p className='text1 text-[35px] md:text-[50px] text-center'>Explore Our Bestsellers</p>
+            <p className='text1 text-[35px] md:text-[50px] text-center' data-aos="fade-up" data-aos-duration="2000">Explore Our Bestsellers</p>
             <div className="swiper-container2 overflow-hidden w-[97%] ms-[1.5%] relative">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
@@ -200,11 +199,11 @@ export default function Besteseller() {
             </div>
 
 
-            <p className='text1 text-[35px] md:text-[50px] text-center mt-5'>Shop By Category</p>
-            <p className='text-center text-[#441a11]'>Explore our premium range of products</p>
+            <p className='text1 text-[35px] md:text-[50px] text-center mt-5' data-aos="fade-up" data-aos-duration="2000">Shop By Category</p>
+            <p className='text-center text-[#441a11]' data-aos="fade-up" data-aos-duration="2000">Explore our premium range of products</p>
 
 
-            <div className="shop_by_category flex justify-between flex-wrap w-[95%] md:w-[85%] ms-[2.5%] md:ms-[7.5%]">
+            <div className="shop_by_category flex justify-between flex-wrap w-[95%] md:w-[85%] ms-[2.5%] md:ms-[7.5%]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <div className="category1 h-[50vh] md:h-[70vh] w-[100%] sm:w-[48%] lg:w-[23%] mt-9 overflow-hidden cursor-pointer">
                     <div className="image-container h-[100%] w-[100%] border border-black flex justify-center items-end">
                         <div className="category_image1 h-[100%] w-[100%] absolute top-0 left-0">
@@ -250,8 +249,8 @@ export default function Besteseller() {
 
 
 
-            <p className='text1 text-[35px] md:text-[50px] text-center mt-[50px]'>Premium Attar (Roll-on Perfume)</p>
-            <p className='text-center'>Explore our premium range of Non Alcoholic Attars</p>
+            <p className='text1 text-[35px] md:text-[50px] text-center mt-[50px]' data-aos="fade-up" data-aos-duration="2000">Premium Attar (Roll-on Perfume)</p>
+            <p className='text-center' data-aos="fade-up" data-aos-duration="2000">Explore our premium range of Non Alcoholic Attars</p>
             <div className="swiper-container2 overflow-hidden w-[97%] ms-[1.5%] relative">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
@@ -360,12 +359,12 @@ export default function Besteseller() {
             </div>
 
             <div className="image_div1 bg-[#fff0e0] w-[95%] ms-[2.5%] mt-5 rounded-[50px] flex flex-wrap">
-                <div className="div w-[100%] md:w-[50%] mt-5 sm:mt-0">
+                <div className="div w-[100%] md:w-[50%] sm:mt-0">
                     <img className='w-[95%] sm:w-[100%] ms-[2.5%] sm:ms-0' src="../public/Group_4_1.webp" alt="" />
                 </div>
 
-                <div className="div1 w-[100%] md:w-[50%] flex justify-start items-center mt-5 sm:mt-0">
-                    <div className="txt ms-[5%]">
+                <div className="w-[100%] md:w-[50%] flex justify-start items-center mt-5 sm:mt-0">
+                    <div className="txt ms-[5%]" data-aos="fade-left" data-aos-duration="2000">
                         <h1 className='text2 text-[35px]'>Our Best Seller Shanaya</h1>
 
                         <p className='mt-3 w-[100%] lg:w-[80%] text-[18px]'>
@@ -378,7 +377,7 @@ export default function Besteseller() {
             </div>
 
 
-            <p className='text1 text-[35px] md:text-[50px] text-center mt-[50px]'>Combo Offer</p>
+            <p className='text1 text-[35px] md:text-[50px] text-center mt-[50px]' data-aos="fade-up" data-aos-duration="2000">Combo Offer</p>
             <div className="swiper-container4 overflow-hidden w-[97%] ms-[1.5%] relative">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
@@ -467,7 +466,7 @@ export default function Besteseller() {
 
             <div className="founder_div flex justify-center items-center">
                 <div className="founder_div1 h-auto w-[95%] bg-white flex flex-wrap mt-5 mb-5">
-                    
+
                     <div className="founder_div2 w-[100%] md:w-[30%] flex justify-center items-center mt-3 mb-3">
                         <img src="/aq.webp" className='h-[90%] w-[90%]' alt="" />
                     </div>

@@ -9,18 +9,17 @@ export default function LocalStorage2() {
 
 
   useEffect(() => {
+
     let user = JSON.parse(localStorage.getItem("data"))  || [];
     setRecord(user)
   }, [record])
 
   const AddData = () => {
-    let Data = { id: Date.now() , name, email, password }
+    let Data = { id: Date.now(), name, email, password }
     console.log(Data);
     
     record.push(Data)
-    localStorage.setItem("data", JSON.stringify(record))
-
-    setRecord(record)
+    localStorage.setItem("data", JSON.stringify(record));
   }
 
   return (

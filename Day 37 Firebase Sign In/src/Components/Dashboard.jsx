@@ -32,7 +32,8 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard-container">
-<p style={{fontSize: "25px"}}>Login Details</p>
+
+      <p style={{ fontSize: "25px" }}>Login Details</p>
       {userData && (
         <table className="user-table">
           <thead>

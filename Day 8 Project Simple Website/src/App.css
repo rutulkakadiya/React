@@ -2,6 +2,10 @@
   font-family: 'Hanken Grotesk';
 }
 
+body{
+  padding: 0 !important;
+}
+
 .swiper {
   width: 100%;
   height: 100%;

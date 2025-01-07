@@ -14,7 +14,7 @@ export default function Searching() {
         {name : "Saurabh" , subject : "React"},
     ]
 
-    const data = arr.filter((item)=> item.name.includes(name))
+    const data = arr.filter((item)=> item.name.includes(name));
   return (
     <div>
       <input type="text" placeholder='Enter name' onChange={(e)=> setName(e.target.value)} />

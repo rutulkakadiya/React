@@ -2,33 +2,21 @@
   "Data": [
     {
       "id": "1",
-      "image": "/Packof6shanaya.jpg",
-      "hoverImage": "/Packofsix.4.jpg",
+      "image": "blob:http://localhost:5173/a2c03b88-ab4e-43d6-93a6-14fe1698e90c",
       "description": "Assorted Luxury Attar Perfume Gift Set (6 × 5.5Ml)",
-      "review": "(3,025)",
-      "price": "₹1,499",
-      "deletePrice": "₹2,999",
-      "discount": "Save 33%"
+      "price": "₹1,499"
     },
     {
       "id": "2",
-      "image": "/OudhAHashimi_.jpg",
-      "hoverImage": "/OudhAlHashmi.jpg",
+      "image": "http://localhost:5173/8c2e7829-3e64-47fb-8cbf-9c8e900d0fe7",
       "description": "Oudh Al Hashmi Luxury Attar Perfume",
-      "review": "(516)",
-      "price": "₹399",
-      "deletePrice": "₹599",
-      "discount": "Save 33%"
+      "price": "₹399"
     },
     {
       "id": "3",
-      "image": "/Luvish_Musk_5.5m.jpg",
-      "hoverImage": "/LavishMusk.jpg",
+      "image": "./14050fba-0a6c-4613-8364-d020761ffcf5",
       "description": "Lavish Musk Premium Attar Perfume",
-      "review": "(741)",
-      "price": "₹399",
-      "deletePrice": "₹599",
-      "discount": "Save 33%"
+      "price": "₹399"
     },
     {
       "id": "4",
@@ -221,6 +209,24 @@
       "image": "blob:http://localhost:5173/7eb2c980-5950-4bdf-8f1e-0e4fb773f926",
       "description": "Perufme set 3",
       "price": "700"
+    },
+    {
+      "id": "5989",
+      "image": "blob:http://localhost:5173/f7993dbb-e7e6-4422-9f7b-5d3da60755a0",
+      "description": "Perfume Set",
+      "price": "₹ 1000"
+    },
+    {
+      "id": "6bd9",
+      "image": "blob:http://localhost:5173/7d6ad141-866f-4eea-a87f-85eae9ffa4b4",
+      "description": "D",
+      "price": "200"
+    },
+    {
+      "id": "57dd",
+      "image": "blob:http://localhost:5173/80d6a924-204c-43cb-a95a-b56103332f4a",
+      "description": "aa",
+      "price": "aa"
     }
   ]
 }

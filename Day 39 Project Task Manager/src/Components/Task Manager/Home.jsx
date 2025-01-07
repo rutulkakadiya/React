@@ -17,6 +17,7 @@ export default function Home() {
         });
     })
 
+    //Fetch Data from AddTask Component
     useEffect(() => {
         const fetchTask = async () => {
             let taskData = await getDocs(collection(database, "TaskDetails"));

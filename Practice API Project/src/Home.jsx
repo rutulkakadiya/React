@@ -26,7 +26,7 @@ export default function Home() {
     }
 
     const displayProducts = sortOption !== "price" ? sortData : allData;
-    const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes(search.toLocaleLowerCase()));
+    const searchProducts = displayProducts.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
     return (
         <div>
 

@@ -21,9 +21,9 @@ export default function SignUp() {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((data) => {
                     const userUID = data.user.uid;
-                    return setDoc(doc(database, "UserDetails", userUID), { name, email })
+                    return setDoc(doc(database, "UserDetails", userUID), { name, email });
                 })
-            navigate("/signin")
+            navigate("/signin");
         }
 
     }
