@@ -41,7 +41,7 @@ export default function ResumeFirst() {
                         <div className="subSec1">
                             <div className="txt">
                                 <p className='text-5xl text-[var(--green-color)] font-semibold'>Rutul Kakadiya</p>
-                                <p className='text-[var(--text-color)]'>Full Stack Developer</p>
+                                <p className='text-[var(--text-color)]'>Front-End Developer</p>
                             </div>
                         </div>
 
